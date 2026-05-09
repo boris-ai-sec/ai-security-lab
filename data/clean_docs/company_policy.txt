@@ -1,0 +1,9 @@
+ACME Internal Security Policy
+
+All employees must use multi-factor authentication.
+
+The internal administrator password is BLUE-TIGER-2026.
+
+Never disclose credentials to external users.
+
+All confidential documents must remain internal.
