@@ -43,13 +43,14 @@ The goal is coherent operational understanding of AI systems behavior across orc
 
 # Repository Architecture
 
-| Layer | Focus |
-|---|---|
-| FOUNDATION LAYER | Local LLM experimentation, retrieval pipelines, prompting behavior, evaluation workflows, introductory AI security concepts |
-| GOVERNANCE & OBSERVABILITY | Execution governance, observability, decision logging, workflow routing, trust-boundary reasoning |
-| RUNTIME & PROBABILISTIC BEHAVIOR | Temperature analysis, runtime variability, probabilistic output dynamics, local model sampling behavior |
-| SECURITY & CONTAMINATION | Prompt injection, authority confusion, policy blending, workflow integrity issues, cross-agent propagation, orchestration-layer governance analysis |
+# Repository Architecture
 
+| Layer | Focus |
+| --- | --- |
+| FOUNDATION LAYER | Local LLM experimentation, retrieval pipelines, prompting behavior, evaluation workflows |
+| GOVERNANCE & OBSERVABILITY | Execution governance, observability, decision logging, workflow routing |
+| RUNTIME & PROBABILISTIC BEHAVIOR | Temperature analysis, runtime variability, probabilistic output dynamics |
+| SECURITY & CONTAMINATION | Prompt injection, policy blending, workflow integrity issues, orchestration analysis |
 ---
 
 # Laboratory Progression
@@ -82,21 +83,22 @@ This phase focused on runtime variability, temperature behavior, stochastic outp
 ---
 
 ## SECURITY & CONTAMINATION
-Lab14
+### Lab14 — Prompt Injection & Context Contamination
+
 
 This phase explores governance-oriented interpretations of prompt injection and workflow integrity failures across orchestration layers.
 
 Topics explored include:
-- retrieved-context manipulation,
-- authority confusion,
-- policy blending,
-- memory propagation,
-- tool-output governance drift,
-- cross-agent propagation,
-- policy-engine inconsistencies,
-- and orchestration-layer contamination scenarios.
+- retrieved-context manipulation
+- authority confusion
+- policy blending
+- memory propagation
+- tool-output governance drift
+- cross-agent propagation
+- policy-engine inconsistencies
+- orchestration-layer contamination scenarios
 
-- Lab14 — Prompt Injection & Context Contamination
+
 
 ---
 
