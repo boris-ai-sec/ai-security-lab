@@ -41,7 +41,7 @@ The goal is coherent operational understanding of AI systems behavior across orc
 
 ---
 
-# Repository Architecture
+
 
 # Repository Architecture
 
