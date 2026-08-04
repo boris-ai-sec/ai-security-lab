@@ -1,11 +1,10 @@
 # AI Systems Risk & Evidence Lab
 
-Practical experiments in **operational AI risk**, **RAG and agent systems**, **runtime evidence**, **observability**, and **readiness assessment**.
-
-This repository supports my work as an independent AI Risk & Governance Consultant:
+This repository supports my work as an independent AI Risk & Governance Consultant.
 
 I examine how AI systems behave in real operating conditions, what evidence supports confidence in their operation, where control boundaries fail, and what should be addressed before broader deployment.
-The Lab produces bounded technical evidence that may inform an Independent AI Risk Review.
+
+The lab produces bounded technical evidence that may inform an Independent AI Risk Review.
 ---
 
 ## What this repository demonstrates
