@@ -1,0 +1,20 @@
+{
+  "diagnostic_id": "DIAG-OTEL-001",
+  "run_type": "telemetry_diagnostic",
+  "run_id": "run-fde01f44-5e9a-4292-9f2a-c08cc3161d0d",
+  "case_id": null,
+  "evidence_origin": "synthetic_harness",
+  "verification_scope": "controlled_local_test",
+  "applicability": "telemetry_transport_diagnostic_only",
+  "client_system_verified": false,
+  "config_revision": "LAB-RH-02A-v0.2",
+  "code_revision": "uncommitted-bootstrap",
+  "status": "completed",
+  "experiment_evidence": false,
+  "exp_rag_001_evidence": false,
+  "qdrant_retrieval_executed": false,
+  "metadata_filtering_executed": false,
+  "source_boundary_validation_executed": false,
+  "observability_limitation": "collector_unreachable",
+  "created_at": "2026-08-04T14:15:25.843929+00:00"
+}
