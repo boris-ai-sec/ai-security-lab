@@ -1,0 +1,17 @@
+{
+  "run_id": "run-b3cf5301-2bd5-4c26-b694-fce7ebee4337",
+  "observability_backend": "phoenix_otlp_http",
+  "observability_status": "connected",
+  "error_type": null,
+  "export_attempted": true,
+  "export_succeeded": true,
+  "recorded_at": "2026-08-04T17:00:05.197624+00:00",
+  "settings": {
+    "enabled": true,
+    "ui_endpoint": "http://127.0.0.1:6006",
+    "traces_endpoint": "http://127.0.0.1:6006/v1/traces",
+    "project_name": "rag-harness",
+    "probe_timeout_seconds": 0.75,
+    "export_timeout_seconds": 2.0
+  }
+}

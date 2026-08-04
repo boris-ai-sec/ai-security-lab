@@ -84,3 +84,23 @@ It does not verify:
 - AI system safety or governance effectiveness.
 
 See `LIMITATIONS.md` and `results/LAB-RH-02A_RESULT.md`.
+
+## Build correction decision
+
+Overlay status: APPROVE_WITH_CORRECTION.
+
+The original export_ok field was replaced by:
+
+- export_attempted
+- export_succeeded
+
+Correction runs confirmed:
+
+- Gate C: export_attempted true, export_succeeded true
+- Gate D: export_attempted false, export_succeeded null
+
+The original Gate D JSON remains preserved as a historical raw artifact and is superseded for semantic interpretation.
+
+Recommended public title:
+
+LAB-RH-02A — Deterministic Trace Correlation and Graceful Observability Fallback

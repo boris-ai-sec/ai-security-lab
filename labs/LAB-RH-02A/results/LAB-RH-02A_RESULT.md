@@ -51,10 +51,35 @@ The Gate D sidecar contains:
 - error_type: collector_unreachable
 - export_ok: true
 
-The meaning of export_ok true requires Build clarification and must not currently be treated as proof that spans reached Phoenix.
+Build determined that export_ok was semantically incorrect. The historical value must not be treated as proof that spans reached Phoenix; correction evidence uses export_attempted and export_succeeded.
 
 ## Portfolio assessment
 
 - GitHub portfolio candidate: yes
 - Publication authorized: no
 - Required before publication: Build review and Project Owner approval
+
+## Correction cycle
+
+Build status: APPROVE_WITH_CORRECTION.
+
+Correction Gate C run:
+run-b3cf5301-2bd5-4c26-b694-fce7ebee4337
+
+Confirmed:
+- export_attempted: true
+- export_succeeded: true
+- observability_status: connected
+- observability_limitation: null
+
+Correction Gate D run:
+run-29695724-937e-4374-952f-6188f5e37aa3
+
+Confirmed:
+- export_attempted: false
+- export_succeeded: null
+- observability_status: unavailable
+- error_type: collector_unreachable
+- observability_limitation: collector_unreachable
+
+The original degraded-run JSON is retained as historical raw evidence and is superseded for semantic interpretation only.
