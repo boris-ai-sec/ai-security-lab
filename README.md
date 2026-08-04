@@ -2,11 +2,10 @@
 
 Practical experiments in **operational AI risk**, **RAG and agent systems**, **runtime evidence**, **observability**, and **readiness assessment**.
 
-This repository supports my work as an:
+This repository supports my work as an independent AI Risk & Governance Consultant:
 
-**AI Systems Risk & Readiness Consultant**  
 I examine how AI systems behave in real operating conditions, what evidence supports confidence in their operation, where control boundaries fail, and what should be addressed before broader deployment.
-
+The Lab produces bounded technical evidence that may inform an Independent AI Risk Review.
 ---
 
 ## What this repository demonstrates
@@ -177,6 +176,7 @@ Model output ≠ finding
 Configuration ≠ runtime behaviour
 Log entry ≠ complete trace
 Test failure ≠ production risk conclusion
+Lab outputs do not independently constitute findings, scores, or readiness decisions.
 ```
 
 Human judgement remains necessary to interpret evidence, define limitations, and connect technical behaviour to operational and business consequences.
@@ -248,7 +248,7 @@ The lab does not provide:
 ## About the author
 
 **Boris Abuzov**  
-**AI Systems Risk & Readiness Consultant**
+**AI Risk & Governance Consultant**
 
 My work focuses on the relationship between:
 
@@ -260,8 +260,8 @@ Architecture
 ```
 
 I help examine whether RAG and agent systems can operate within business processes with understandable risks, adequate evidence, and defensible control boundaries.
-
-- LinkedIn: https://www.linkedin.com/in/boris-abuzov-42127b5a/
+- Website: https://borisabuzov.com
+- LinkedIn:https://www.linkedin.com/in/boris-abuzov-854176426
 - GitHub: https://github.com/boris-ai-sec
 - Repository: https://github.com/boris-ai-sec/ai-security-lab
 
