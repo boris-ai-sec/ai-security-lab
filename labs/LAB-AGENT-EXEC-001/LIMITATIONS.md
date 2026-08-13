@@ -1,0 +1,21 @@
+# Limitations
+
+- Controlled demo environment with synthetic test objects.
+- Limited number of captured runs.
+- UI screenshots are not a complete backend trace.
+- The connected MCP/tool surface determines available observability.
+- Recorded tool-call data in the conversation is not a separate independent execution-trace endpoint.
+- A target response and a target-object fresh read are distinct evidence moments, but may still depend on the same integration surface.
+- Bitrix24 separate stage-history/timeline evidence was not available through the tested tools.
+- The Bitrix deal object's transition fields are not a separate history record.
+- MoySklad audit coverage is bounded by accessible endpoints, returned entity/event types and the selected time window.
+- Absence from visible audit results does not prove absence from all backend systems.
+- The client-side interruption itself is not captured in a screenshot.
+- The interruption test does not establish a Bitrix server timeout or server-side acknowledgement failure.
+- The recovered result's no-retry statement is visible UI/tool narrative, not independent retry telemetry.
+- Some intermediate Bitrix stage transitions lack complete approval/acknowledgement captures.
+- Filename timestamps and target-system timestamps use different timezone/display conventions; filename sorting is not the sole chronology source.
+- No production validation.
+- No system-wide reliability or weakness conclusion.
+- No security certification or penetration-test result.
+- No readiness decision or full FRIS assessment.
