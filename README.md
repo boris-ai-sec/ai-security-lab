@@ -77,6 +77,7 @@ The primary areas are:
 | Lab 15 | Workflow telemetry with OpenTelemetry/OpenInference and Phoenix | Traces, span attributes, local-model execution evidence |
 | [LAB-RH-02A](labs/LAB-RH-02A/) | Deterministic trace correlation and graceful observability fallback | Controlled telemetry evidence, fallback behavior, limitations |
 | [LAB-AGENT-EXEC-001](labs/LAB-AGENT-EXEC-001/) | Execution evidence and approval-to-action integrity in connected business systems | Curated invocation, fresh-read, audit, and observability evidence |
+| [LAB-AGENT-EXEC-002](labs/LAB-AGENT-EXEC-002/) | Approval-to-action integrity and execution-state revalidation | Bound parameters, invocation, acknowledgement, fresh-state verification, and bounded revalidation evidence |
 
 > The repository is evolving. Some labs are more complete and polished than others, and several remain experimental by design.
 
