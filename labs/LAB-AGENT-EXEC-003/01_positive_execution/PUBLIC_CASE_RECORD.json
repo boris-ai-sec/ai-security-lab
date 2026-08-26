@@ -1,0 +1,18 @@
+{
+  "public_title": "Positive Controlled Execution",
+  "finding": "The approved action was executed, and the intended post-action state was freshly verified.",
+  "evidence": [
+    "Harness business outcome: VERIFIED_COMPLETED.",
+    "Harness control behavior: EXECUTED.",
+    "Side effect attempted: YES.",
+    "Side effect verified: YES.",
+    "Harness verdict: PASS."
+  ],
+  "why_it_matters": "A successful execution claim can be tied to the actual invocation and to fresh evidence of the resulting target state.",
+  "scope": "Controlled validation of the tested mechanism in a reference environment. Production-wide effectiveness was not evaluated.",
+  "source_run_id": "run-96183796-adf0-46f9-bff1-7fe8c8587650",
+  "source_snapshot": {
+    "filename": "LOCAL_HUBSPOT_PRIMITIVE_01_EXPERIMENT_SNAPSHOT_2026-08-21.zip",
+    "sha256": "09dcc80d4c858340e48cbc4343bbc1b221791d70c283eda76391d456bd8f5823"
+  }
+}

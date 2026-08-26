@@ -1,0 +1,51 @@
+{
+  "package_name": "HUBSPOT_CONTROLLED_VALIDATION_SERIES_2026-08-26_V2",
+  "lab_id": "LAB-AGENT-EXEC-003",
+  "framework_disposition": "APPROVE",
+  "publication_policy": "ASSERTIVE-BUT-BOUNDED",
+  "publication_status": "PUBLIC / GITHUB RELEASE",
+  "writing_order": "Finding -> Evidence -> Why it matters -> Scope",
+  "source_policy": "Derived sanitized public projection; immutable internal source snapshots retained separately.",
+  "framework_review_package": {
+    "filename": "HUBSPOT_CONTROLLED_VALIDATION_SERIES_2026-08-26_V2.zip",
+    "sha256": "93ee9ed1132db8b5f99acd9ddfbd95b12764f1e1397ff4125fb696e8c3fbf2a7"
+  },
+  "cases": [
+    {
+      "directory": "01_positive_execution",
+      "record": "01_positive_execution/PUBLIC_CASE_RECORD.json",
+      "source_run_id": "run-96183796-adf0-46f9-bff1-7fe8c8587650",
+      "source_snapshot": {
+        "filename": "LOCAL_HUBSPOT_PRIMITIVE_01_EXPERIMENT_SNAPSHOT_2026-08-21.zip",
+        "sha256": "09dcc80d4c858340e48cbc4343bbc1b221791d70c283eda76391d456bd8f5823"
+      }
+    },
+    {
+      "directory": "02_stale_state",
+      "record": "02_stale_state/PUBLIC_CASE_RECORD.json",
+      "source_run_id": "run-53f72461-ca3f-474b-b0cf-9ac6a4c1e97a",
+      "source_snapshot": {
+        "filename": "LOCAL_HUBSPOT_STALE_STATE_01_EXPERIMENT_SNAPSHOT_2026-08-22.zip",
+        "sha256": "957294e5f2a22b11bb1b12c0e259e83ec26d2e5923f4141f3a7a225c843e5e82"
+      }
+    },
+    {
+      "directory": "03_parameter_drift",
+      "record": "03_parameter_drift/PUBLIC_CASE_RECORD.json",
+      "source_run_id": "run-48ee172a-ee2b-4b2d-8d1d-cefdae6da1c4",
+      "source_snapshot": {
+        "filename": "LOCAL_HUBSPOT_PARAMETER_DRIFT_01_EXPERIMENT_SNAPSHOT_2026-08-22.zip",
+        "sha256": "5e4cf7639afff7e36e0424703a0efff7f3918aa066996f035e7e7bef3e5308fc"
+      }
+    },
+    {
+      "directory": "04_target_drift",
+      "record": "04_target_drift/PUBLIC_CASE_RECORD.json",
+      "source_run_id": "run-c5f25a30-9343-4029-b70b-6db9ba638613",
+      "source_snapshot": {
+        "filename": "LOCAL_HUBSPOT_TARGET_DRIFT_01_EXPERIMENT_SNAPSHOT_2026-08-22.zip",
+        "sha256": "ecc999b9944e9ac875ad28c7d2585175406096aab1db077be543da6a7280330e"
+      }
+    }
+  ]
+}

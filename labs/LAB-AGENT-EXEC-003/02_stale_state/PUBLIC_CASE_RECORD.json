@@ -1,0 +1,19 @@
+{
+  "public_title": "Stale-State Condition",
+  "finding": "The approved baseline differed from the fresh pre-execution state. The write was not executed.",
+  "evidence": [
+    "Precondition comparison: C4 MISMATCH.",
+    "Business outcome: NOT_EXECUTED.",
+    "No write side effect was attempted.",
+    "The retained deterministic Harness run produced PASS."
+  ],
+  "causal_boundary": "STALE-STATE CONDITION OBSERVED / WRITE NOT EXECUTED / CAUSAL BLOCKING MECHANISM INCONCLUSIVE",
+  "causal_claim_allowed": false,
+  "why_it_matters": "Fresh state can materially differ from the state on which an approved action was based. In this experiment the write did not occur, but the available evidence does not isolate stale-state mismatch as the causal blocking mechanism.",
+  "scope": "Controlled validation of the tested mechanism in a reference environment. Production-wide effectiveness was not evaluated.",
+  "source_run_id": "run-53f72461-ca3f-474b-b0cf-9ac6a4c1e97a",
+  "source_snapshot": {
+    "filename": "LOCAL_HUBSPOT_STALE_STATE_01_EXPERIMENT_SNAPSHOT_2026-08-22.zip",
+    "sha256": "957294e5f2a22b11bb1b12c0e259e83ec26d2e5923f4141f3a7a225c843e5e82"
+  }
+}

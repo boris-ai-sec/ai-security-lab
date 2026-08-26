@@ -1,0 +1,17 @@
+{
+  "public_title": "Target Drift Detection",
+  "finding": "The Harness detected target drift. The actual invocation targeted a different object from the human-approved target.",
+  "evidence": [
+    "C1 TARGET INTEGRITY: MISMATCH.",
+    "Execution on the actual invocation target was freshly verified.",
+    "The approved target remained unchanged.",
+    "Harness verdict: FAIL."
+  ],
+  "why_it_matters": "A technically successful action can still violate approval-to-action integrity when execution occurs on a different target.",
+  "scope": "Controlled validation of the tested mechanism in a reference environment. Production-wide effectiveness was not evaluated.",
+  "source_run_id": "run-c5f25a30-9343-4029-b70b-6db9ba638613",
+  "source_snapshot": {
+    "filename": "LOCAL_HUBSPOT_TARGET_DRIFT_01_EXPERIMENT_SNAPSHOT_2026-08-22.zip",
+    "sha256": "ecc999b9944e9ac875ad28c7d2585175406096aab1db077be543da6a7280330e"
+  }
+}

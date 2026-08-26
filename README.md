@@ -78,6 +78,7 @@ The primary areas are:
 | [LAB-RH-02A](labs/LAB-RH-02A/) | Deterministic trace correlation and graceful observability fallback | Controlled telemetry evidence, fallback behavior, limitations |
 | [LAB-AGENT-EXEC-001](labs/LAB-AGENT-EXEC-001/) | Execution evidence and approval-to-action integrity in connected business systems | Curated invocation, fresh-read, audit, and observability evidence |
 | [LAB-AGENT-EXEC-002](labs/LAB-AGENT-EXEC-002/) | Approval-to-action integrity and execution-state revalidation | Bound parameters, invocation, acknowledgement, fresh-state verification, and bounded revalidation evidence |
+| [LAB-AGENT-EXEC-003](labs/LAB-AGENT-EXEC-003/) | HubSpot controlled validation: execution, stale state, parameter drift, and target drift | Sanitized case records with retained run and snapshot-hash provenance |
 
 > The repository is evolving. Some labs are more complete and polished than others, and several remain experimental by design.
 
@@ -85,7 +86,7 @@ The primary areas are:
 
 ## Lab 15: Workflow Telemetry and Phoenix
 
-The latest lab explores runtime evidence using:
+Lab 15 explores runtime evidence using:
 
 - **Phoenix**
 - **OpenTelemetry**

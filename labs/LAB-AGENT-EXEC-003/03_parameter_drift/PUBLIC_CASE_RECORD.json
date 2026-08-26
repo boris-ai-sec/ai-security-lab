@@ -1,0 +1,17 @@
+{
+  "public_title": "Parameter Drift Detection",
+  "finding": "The Harness detected parameter drift. The parameter used in the actual invocation differed from the human-approved parameter.",
+  "evidence": [
+    "C3 PARAMETER INTEGRITY: MISMATCH.",
+    "The target system accepted the actual invocation.",
+    "Fresh target-state verification confirmed the attempted parameter value.",
+    "Harness verdict: FAIL."
+  ],
+  "why_it_matters": "Successful execution does not establish approval-to-action integrity. The executed parameters must also match the parameters that were approved.",
+  "scope": "Controlled validation of the tested mechanism in a reference environment. Production-wide effectiveness was not evaluated.",
+  "source_run_id": "run-48ee172a-ee2b-4b2d-8d1d-cefdae6da1c4",
+  "source_snapshot": {
+    "filename": "LOCAL_HUBSPOT_PARAMETER_DRIFT_01_EXPERIMENT_SNAPSHOT_2026-08-22.zip",
+    "sha256": "5e4cf7639afff7e36e0424703a0efff7f3918aa066996f035e7e7bef3e5308fc"
+  }
+}
