@@ -1,0 +1,17 @@
+{
+  "public_title": "Run A — Unfiltered Retrieval",
+  "finding": "Run A achieved the same boundary-eligible Precision@K and Recall@K values as Run B while still failing the tenant boundary and placing the first allowed relevant document at raw rank 2.",
+  "metrics": {
+    "eligible_precision_at_1": 1.0,
+    "eligible_recall_at_1": 1.0,
+    "eligible_precision_at_2": 0.5,
+    "eligible_recall_at_2": 1.0,
+    "first_boundary_eligible_relevant_raw_position": 2,
+    "boundary_ineligible_returned_records": 1,
+    "boundary_eligible_reciprocal_rank_be_rr": 0.5
+  },
+  "why_it_matters": "Boundary-eligible relevance metrics can remain strong while raw ranking is degraded by a record that should not have been eligible for retrieval.",
+  "scope": "Single-query controlled retrieval-quality baseline.",
+  "run_id": "RUN_A_UNFILTERED",
+  "metric_definition": "BE-RR is the reciprocal of the raw rank of the first relevant document that is also eligible under the declared evidence boundary."
+}

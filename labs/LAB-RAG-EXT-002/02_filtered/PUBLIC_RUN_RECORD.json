@@ -1,0 +1,17 @@
+{
+  "public_title": "Run B — Explicit Tenant Filter",
+  "finding": "Run B produced the same boundary-eligible Precision@K and Recall@K values as Run A, while the first boundary-eligible relevant document moved to raw rank 1 and no boundary-ineligible document was returned.",
+  "metrics": {
+    "eligible_precision_at_1": 1.0,
+    "eligible_recall_at_1": 1.0,
+    "eligible_precision_at_2": 0.5,
+    "eligible_recall_at_2": 1.0,
+    "first_boundary_eligible_relevant_raw_position": 1,
+    "boundary_ineligible_returned_records": 0,
+    "boundary_eligible_reciprocal_rank_be_rr": 1.0
+  },
+  "why_it_matters": "The explicit tenant filter improved raw position of the allowed relevant document without changing the boundary-eligible Precision@K or Recall@K values.",
+  "scope": "Single-query controlled retrieval-quality baseline.",
+  "run_id": "RUN_B_FILTERED_TENANT_A",
+  "metric_definition": "BE-RR is the reciprocal of the raw rank of the first relevant document that is also eligible under the declared evidence boundary."
+}

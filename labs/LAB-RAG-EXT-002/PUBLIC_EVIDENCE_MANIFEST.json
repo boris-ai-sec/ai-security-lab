@@ -1,0 +1,71 @@
+{
+  "package_name": "LANGFLOW_QDRANT_RETRIEVAL_QUALITY_2026-08-26_V1",
+  "publication_policy": "ASSERTIVE-BUT-BOUNDED",
+  "writing_order": "Finding -> Evidence -> Why it matters -> Scope",
+  "publication_status": "STAGING / APPROVED FOR GITHUB RELEASE AFTER CORRECTION GATE",
+  "source_policy": "Derived sanitized public projection from the source-resolved single-query Langflow/Qdrant retrieval-quality package.",
+  "primary_conclusion": "The two controlled runs had the same boundary-eligible Precision@K and Recall@K values, while boundary control and raw ranking differed.",
+  "metric_basis": "boundary_eligible_projection",
+  "sources": {
+    "external_evidence": {
+      "filename": "LANGFLOW_RAG_BOUNDARY_EXP_01_EXTERNAL_EVIDENCE_2026-08-26.json",
+      "sha256": "5cb7f30687e0e03358fdf387f74cc2d4e2ca594f74d5dff2381daecb5dc12ade"
+    },
+    "qrels": {
+      "filename": "LANGFLOW_RAG_BOUNDARY_EXP_01_QRELS_V0_1.json",
+      "sha256": "2b9e1fadc129ff459169a46a7cbfa58c342c5cf2945e46c7cb7b45e312e4b1d2"
+    },
+    "retrieval_quality_result": {
+      "filename": "LANGFLOW_RAG_BOUNDARY_EXP_01_RETRIEVAL_QUALITY_RESULT_V0_1.json",
+      "sha256": "91ea9c9745fdf6b9865ac8357a0ea9522c4cd3c25026219016b6ed4510b96909"
+    },
+    "retrieval_quality_record": {
+      "filename": "LANGFLOW_RETRIEVAL_QUALITY_01_RECORD_2026-08-26.md",
+      "sha256": "e55a7f4bac0ae4cdf4c5526e9fc75e61f6673476de0e309661a75ef6e03231f3"
+    },
+    "evaluator": {
+      "filename": "retrieval_quality_evaluator.py",
+      "sha256": "25751b382a63ede8b5948ea0e27edacc467d35c908136b3624f34ede8f6b875d"
+    },
+    "evaluator_tests": {
+      "filename": "test_retrieval_quality_evaluator.py",
+      "sha256": "1b194ae8a461c2b85423f9cc86bacf93a5532896f1747db616629508ec797604"
+    }
+  },
+  "validation": {
+    "package_disposition": "PASS — SINGLE-QUERY RETRIEVAL-QUALITY BASELINE",
+    "evaluator_tests": "4 passed",
+    "mrr_reported": false,
+    "single_query_reciprocal_rank_reported": true
+  },
+  "runs": [
+    {
+      "run_id": "RUN_A_UNFILTERED",
+      "boundary_ineligible_returned_records": 1,
+      "eligible_precision_at_1": 1.0,
+      "eligible_recall_at_1": 1.0,
+      "eligible_precision_at_2": 0.5,
+      "eligible_recall_at_2": 1.0,
+      "first_eligible_relevant_raw_position": 2,
+      "boundary_eligible_reciprocal_rank_be_rr": 0.5
+    },
+    {
+      "run_id": "RUN_B_FILTERED_TENANT_A",
+      "boundary_ineligible_returned_records": 0,
+      "eligible_precision_at_1": 1.0,
+      "eligible_recall_at_1": 1.0,
+      "eligible_precision_at_2": 0.5,
+      "eligible_recall_at_2": 1.0,
+      "first_eligible_relevant_raw_position": 1,
+      "boundary_eligible_reciprocal_rank_be_rr": 1.0
+    }
+  ],
+  "framework_disposition": "APPROVE WITH LIMITED CORRECTIONS",
+  "framework_corrections": [
+    "Run A wording tightened to exact comparative result.",
+    "Reciprocal Rank relabeled and explicitly defined as Boundary-Eligible Reciprocal Rank (BE-RR)."
+  ],
+  "metric_definition": "Boundary-Eligible Reciprocal Rank (BE-RR) is the reciprocal of the raw rank of the first relevant document that is also eligible under the declared evidence boundary.",
+  "source_ranking_metric": "reciprocal_rank_of_first_boundary_eligible_relevant_document_in_raw_retrieval_order",
+  "mrr_claimed": false
+}

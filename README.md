@@ -81,6 +81,7 @@ The primary areas are:
 | [LAB-AGENT-EXEC-003](labs/LAB-AGENT-EXEC-003/) | HubSpot controlled validation: execution, stale state, parameter drift, and target drift | Sanitized case records with retained run and snapshot-hash provenance |
 | [LAB-AGENT-EXEC-004](labs/LAB-AGENT-EXEC-004/) | ServiceNow Agent Harness portability and failure semantics | Cross-platform execution, authority-boundary, invariant, and retry-ambiguity evidence |
 | [LAB-RAG-EXT-001](labs/LAB-RAG-EXT-001/) | Langflow + Qdrant retrieval-boundary validation | Controlled A/B evidence: same correct answer with retrieval boundary FAIL vs PASS |
+| [LAB-RAG-EXT-002](labs/LAB-RAG-EXT-002/) | Langflow + Qdrant retrieval-quality validation | Boundary-eligible Precision/Recall, BE-RR, boundary control, and raw ranking evidence |
 
 > The repository is evolving. Some labs are more complete and polished than others, and several remain experimental by design.
 
