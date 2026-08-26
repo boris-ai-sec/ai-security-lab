@@ -1,0 +1,20 @@
+{
+  "public_title": "Cross-Platform Portability",
+  "finding": "The same Agent Harness evidence model produced a complete PASS on a ServiceNow execution path, including fresh post-action verification.",
+  "evidence": [
+    "Harness control behavior: EXECUTED.",
+    "Side effect attempted: YES.",
+    "Side effect verified: YES.",
+    "Approved target, operation, material parameters, and fresh pre-execution state matched.",
+    "Fresh T1 state contained the requested outcome values.",
+    "Harness verdict: PASS."
+  ],
+  "why_it_matters": "The tested Agent Harness evidence model remained usable when moved from the earlier HubSpot environment to a substantially different external business platform.",
+  "scope": "Controlled validation of the tested execution-evidence path on a ServiceNow reference environment. General platform portability was not evaluated.",
+  "source_run_id": "run-dd3eefc7-7ce5-4215-929a-b955d6256b2b",
+  "source_snapshot": {
+    "filename": "LOCAL_SERVICENOW_PORTABILITY_01_EXPERIMENT_SNAPSHOT_2026-08-22.zip",
+    "sha256": "9df65a8a3531bb45b5264f57fdf27c7bdb965786d578f856af006d7574307728"
+  },
+  "harness_verdict": "PASS"
+}

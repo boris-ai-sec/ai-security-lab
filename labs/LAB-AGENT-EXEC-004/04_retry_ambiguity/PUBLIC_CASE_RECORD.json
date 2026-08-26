@@ -1,0 +1,24 @@
+{
+  "public_title": "Retry Ambiguity",
+  "finding": "The retry produced an observed target state, but acknowledgement and duplicate-risk provenance remained unresolved. The Harness therefore returned INCONCLUSIVE.",
+  "evidence": [
+    "An explicit retry was executed.",
+    "Retry control behavior: RETRY_OBSERVED.",
+    "Expected T1 state was observed.",
+    "C6 ACKNOWLEDGEMENT / VERIFICATION RELATIONSHIP: UNKNOWN.",
+    "C8 RETRY IDENTITY / DUPLICATE-RISK BOUNDARY: UNKNOWN.",
+    "Side effect attempted: YES.",
+    "Side effect verified: NO.",
+    "Harness verdict: INCONCLUSIVE."
+  ],
+  "epistemic_boundary": "OBSERVED TARGET STATE / EXECUTION ATTRIBUTION UNRESOLVED / DUPLICATE-RISK PROVENANCE UNRESOLVED",
+  "duplicate_side_effect_claim_allowed": false,
+  "why_it_matters": "An observed final state does not resolve which attempt caused it, and a successful retry does not by itself eliminate duplicate-side-effect risk.",
+  "scope": "Controlled validation of one ambiguous-acknowledgement and explicit-retry scenario in a ServiceNow reference environment.",
+  "source_run_id": "run-95a2ca3d-c6c2-4a01-a310-9e4856e6f4ac",
+  "source_snapshot": {
+    "filename": "LOCAL_SERVICENOW_RETRY_AMBIGUITY_01_EXPERIMENT_SNAPSHOT_2026-08-24.zip",
+    "sha256": "20db412108e1330e61f2514e056cea3bffec713c3a49e8ca1a5a5d72869442d7"
+  },
+  "harness_verdict": "INCONCLUSIVE"
+}

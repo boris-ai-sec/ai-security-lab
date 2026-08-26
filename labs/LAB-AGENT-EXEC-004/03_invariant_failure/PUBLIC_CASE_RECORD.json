@@ -1,0 +1,20 @@
+{
+  "public_title": "Invariant Failure",
+  "finding": "The Harness detected that a material field approved to remain unchanged changed in the verified T1 state.",
+  "evidence": [
+    "Approved and actual target matched.",
+    "Approved and actual operation matched.",
+    "Approved and actual material parameters matched.",
+    "Fresh T1 verification confirmed the requested outcome.",
+    "At least one approved unchanged-field invariant changed between pre-execution state and T1.",
+    "Harness verdict: FAIL."
+  ],
+  "why_it_matters": "A requested outcome can be present while the resulting state still violates an approved invariant. Outcome verification and invariant preservation are separate checks.",
+  "scope": "Controlled validation of one material unchanged-field invariant in a ServiceNow reference environment.",
+  "source_run_id": "run-02925fd9-3d5e-4759-9b1c-1303c7e785da",
+  "source_snapshot": {
+    "filename": "LOCAL_SERVICENOW_INVARIANT_01_EXPERIMENT_SNAPSHOT_2026-08-24.zip",
+    "sha256": "5d5f82b9b812a301b2a74f686fb4da3e5a496874b19c42edc5e3b7de6ee8e6eb"
+  },
+  "harness_verdict": "FAIL"
+}

@@ -1,0 +1,52 @@
+{
+  "package_name": "SERVICENOW_AGENT_HARNESS_PORTABILITY_FAILURE_SEMANTICS_2026-08-26_V1",
+  "publication_policy": "ASSERTIVE-BUT-BOUNDED",
+  "writing_order": "Finding -> Evidence -> Why it matters -> Scope",
+  "publication_status": "STAGING / APPROVED FOR GITHUB RELEASE",
+  "source_policy": "Derived sanitized public projection; immutable internal source snapshots retained separately.",
+  "primary_conclusion": "The ServiceNow series demonstrates that the Agent Harness evidence model remained usable on a second external business platform and preserved meaningful PASS, FAIL, and INCONCLUSIVE semantics across execution, authority, invariant, and retry-ambiguity cases.",
+  "cases": [
+    {
+      "directory": "01_portability",
+      "record": "01_portability/PUBLIC_CASE_RECORD.json",
+      "source_run_id": "run-dd3eefc7-7ce5-4215-929a-b955d6256b2b",
+      "source_snapshot": {
+        "filename": "LOCAL_SERVICENOW_PORTABILITY_01_EXPERIMENT_SNAPSHOT_2026-08-22.zip",
+        "sha256": "9df65a8a3531bb45b5264f57fdf27c7bdb965786d578f856af006d7574307728"
+      },
+      "harness_verdict": "PASS"
+    },
+    {
+      "directory": "02_authority_boundary",
+      "record": "02_authority_boundary/PUBLIC_CASE_RECORD.json",
+      "source_run_id": "run-02b9c9b9-809d-435b-93de-cdc6bb5a416c",
+      "source_snapshot": {
+        "filename": "LOCAL_SERVICENOW_AUTHORITY_BOUNDARY_01_EXPERIMENT_SNAPSHOT_2026-08-24.zip",
+        "sha256": "c7cca0aa53d337ccca08ab4884f9525c76b4b8865a2955219c18965c4a7d72e4"
+      },
+      "harness_verdict": "FAIL"
+    },
+    {
+      "directory": "03_invariant_failure",
+      "record": "03_invariant_failure/PUBLIC_CASE_RECORD.json",
+      "source_run_id": "run-02925fd9-3d5e-4759-9b1c-1303c7e785da",
+      "source_snapshot": {
+        "filename": "LOCAL_SERVICENOW_INVARIANT_01_EXPERIMENT_SNAPSHOT_2026-08-24.zip",
+        "sha256": "5d5f82b9b812a301b2a74f686fb4da3e5a496874b19c42edc5e3b7de6ee8e6eb"
+      },
+      "harness_verdict": "FAIL"
+    },
+    {
+      "directory": "04_retry_ambiguity",
+      "record": "04_retry_ambiguity/PUBLIC_CASE_RECORD.json",
+      "source_run_id": "run-95a2ca3d-c6c2-4a01-a310-9e4856e6f4ac",
+      "source_snapshot": {
+        "filename": "LOCAL_SERVICENOW_RETRY_AMBIGUITY_01_EXPERIMENT_SNAPSHOT_2026-08-24.zip",
+        "sha256": "20db412108e1330e61f2514e056cea3bffec713c3a49e8ca1a5a5d72869442d7"
+      },
+      "harness_verdict": "INCONCLUSIVE"
+    }
+  ],
+  "framework_disposition": "APPROVE WITH LIMITED CORRECTION",
+  "framework_correction_status": "APPLIED"
+}

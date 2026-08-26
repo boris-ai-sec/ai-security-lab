@@ -1,0 +1,21 @@
+{
+  "public_title": "Authority Boundary Failure",
+  "finding": "The Harness detected that the actual invocation occurred outside the recorded effective authority boundary.",
+  "evidence": [
+    "Approved and actual target matched.",
+    "Approved and actual operation matched.",
+    "Approved and actual material parameters matched.",
+    "The invoked operation was outside the recorded effective authority boundary.",
+    "Side effect attempted: YES.",
+    "Side effect verified: NO.",
+    "Harness verdict: FAIL."
+  ],
+  "why_it_matters": "Approval-to-action integrity is not sufficient when the resulting invocation falls outside the effective authority granted to the actor.",
+  "scope": "Controlled validation of one recorded authority-boundary failure mechanism in a ServiceNow reference environment.",
+  "source_run_id": "run-02b9c9b9-809d-435b-93de-cdc6bb5a416c",
+  "source_snapshot": {
+    "filename": "LOCAL_SERVICENOW_AUTHORITY_BOUNDARY_01_EXPERIMENT_SNAPSHOT_2026-08-24.zip",
+    "sha256": "c7cca0aa53d337ccca08ab4884f9525c76b4b8865a2955219c18965c4a7d72e4"
+  },
+  "harness_verdict": "FAIL"
+}
