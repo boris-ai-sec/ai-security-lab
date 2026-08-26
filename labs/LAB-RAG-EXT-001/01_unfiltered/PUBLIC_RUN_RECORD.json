@@ -1,0 +1,16 @@
+{
+  "public_title": "Run A — Unfiltered Retrieval",
+  "finding": "The unfiltered retrieval crossed the declared tenant boundary. A tenant_b document entered downstream context while the allowed tenant was tenant_a.",
+  "evidence": [
+    "Run ID: RUN_A_UNFILTERED.",
+    "Retrieved set included tenant_b.",
+    "Cross-tenant content propagated through Parser/context into the final prompt.",
+    "Tenant retrieval boundary: FAIL.",
+    "Final answer correctness: PASS."
+  ],
+  "why_it_matters": "A correct final answer did not prevent a retrieval-control failure. Output correctness and retrieval-boundary correctness were separate properties.",
+  "scope": "Controlled tenant-boundary validation in the tested Langflow + Qdrant reference environment.",
+  "run_id": "RUN_A_UNFILTERED",
+  "boundary_verdict": "FAIL",
+  "final_answer_correctness": "PASS"
+}

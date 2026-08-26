@@ -1,0 +1,58 @@
+{
+  "package_name": "LANGFLOW_QDRANT_RETRIEVAL_BOUNDARY_2026-08-26_V1",
+  "publication_policy": "ASSERTIVE-BUT-BOUNDED",
+  "writing_order": "Finding -> Evidence -> Why it matters -> Scope",
+  "publication_status": "STAGING / APPROVED FOR GITHUB RELEASE",
+  "source_policy": "Derived sanitized public projection from the validated Langflow/Qdrant controlled experiment and processed V0.3 validation package.",
+  "primary_conclusion": "The controlled experiment produced the same correct final answer in both runs while retrieval-boundary status changed from FAIL under unfiltered retrieval to PASS under an explicit tenant filter.",
+  "mechanism_conclusion": "Final-answer correctness did not establish retrieval-control correctness.",
+  "sources": {
+    "external_evidence": {
+      "filename": "LANGFLOW_RAG_BOUNDARY_EXP_01_EXTERNAL_EVIDENCE_2026-08-26.json",
+      "sha256": "5cb7f30687e0e03358fdf387f74cc2d4e2ca594f74d5dff2381daecb5dc12ade"
+    },
+    "final_experiment_record": {
+      "filename": "LANGFLOW_RAG_BOUNDARY_EXP_01_FINAL_RECORD_2026-08-26.md",
+      "sha256": "8b786366b9fcf75b6869fe25943fd5e449b314e195bb0ba9794f935702f72e8d"
+    },
+    "processed_v03_run_record": {
+      "filename": "LANGFLOW_EXTERNAL_VALIDATION_V03_RUN_RECORD_2026-08-26.md",
+      "sha256": "7fe1225b5c7aba04faf3b17bd4d524eb1a5bca97bae1497bcce29685d8fc8a75"
+    },
+    "identity_mapping": {
+      "filename": "LANGFLOW_IDENTITY_MAPPING_V0_1.json",
+      "sha256": "4e1a9514d19416fbaec99bcc2c1379f55c48efceda65dae5038d367321e2d131"
+    },
+    "normalized_v03": {
+      "filename": "LANGFLOW_RAG_BOUNDARY_EXP_01_NORMALIZED_V03_2026-08-26.json",
+      "sha256": "6a6274a1800d9267b93c31aadf3f5f7854eb632a0eed7cc8f6c520d6fa2218b9"
+    },
+    "validation_result_v03": {
+      "filename": "LANGFLOW_RAG_BOUNDARY_EXP_01_VALIDATION_RESULT_V03_2026-08-26.json",
+      "sha256": "f12e741e300ffd75ff69f6bd4d7446fed5315945efb1e830de0c7504ade10087"
+    }
+  },
+  "runs": [
+    {
+      "directory": "01_unfiltered",
+      "record": "01_unfiltered/PUBLIC_RUN_RECORD.json",
+      "run_id": "RUN_A_UNFILTERED",
+      "boundary_verdict": "FAIL",
+      "final_answer_correctness": "PASS"
+    },
+    {
+      "directory": "02_filtered",
+      "record": "02_filtered/PUBLIC_RUN_RECORD.json",
+      "run_id": "RUN_B_FILTERED_TENANT_A",
+      "boundary_verdict": "PASS",
+      "final_answer_correctness": "PASS"
+    }
+  ],
+  "retrieval_quality_package": {
+    "status": "SOURCE RESOLVED / HELD FOR SEPARATE REVIEW",
+    "reason": "Single-query retrieval-quality baseline is a distinct evaluation question and is not merged into this retrieval-boundary publication block."
+  },
+  "framework_disposition": "APPROVE",
+  "framework_wording_corrections": "NONE",
+  "additional_framework_limitations": "NONE"
+}

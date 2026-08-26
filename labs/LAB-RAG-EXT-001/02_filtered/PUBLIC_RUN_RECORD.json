@@ -1,0 +1,16 @@
+{
+  "public_title": "Run B — Explicit Tenant Filter",
+  "finding": "The explicit tenant_a retrieval filter excluded tenant_b records and preserved the declared tenant boundary.",
+  "evidence": [
+    "Run ID: RUN_B_FILTERED_TENANT_A.",
+    "Returned records were limited to tenant_a.",
+    "No tenant_b record entered the filtered retrieval set.",
+    "Tenant retrieval boundary: PASS.",
+    "Final answer correctness: PASS."
+  ],
+  "why_it_matters": "The filtered run preserved the retrieval boundary without changing the correctness of the final answer.",
+  "scope": "Controlled tenant-boundary validation in the tested Langflow + Qdrant reference environment.",
+  "run_id": "RUN_B_FILTERED_TENANT_A",
+  "boundary_verdict": "PASS",
+  "final_answer_correctness": "PASS"
+}
