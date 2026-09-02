@@ -53,7 +53,7 @@ This is a **bounded evidence inspection and integrity check**, not a full experi
 | [`labs/LAB-RAG-EXT-002/`](labs/LAB-RAG-EXT-002/) | CURRENT / SHA-BOUND PUBLIC EVIDENCE | Most recent committed retrieval-quality comparison |
 | [`labs/LAB-RAG-EXT-001/`](labs/LAB-RAG-EXT-001/) | CURRENT RELATED EVIDENCE | Retrieval-boundary comparison with answer correctness held constant |
 | [`labs/LAB-AGENT-EXEC-004/`](labs/LAB-AGENT-EXEC-004/) | CURRENT / SHA-BOUND PUBLIC EVIDENCE | ServiceNow portability and failure semantics |
-| [`labs/LAB-AGENT-EXEC-003/`](labs/LAB-AGENT-EXEC-003/) | CURRENT PUBLIC EVIDENCE / INTEGRITY REVIEW NEEDED | HubSpot execution, stale-state, parameter-drift, and target-drift cases; one retained README checksum does not verify |
+| [`labs/LAB-AGENT-EXEC-003/`](labs/LAB-AGENT-EXEC-003/) | PUBLIC EVIDENCE / README CHECKSUM DISCREPANCY NOTED | HubSpot execution, stale-state, parameter-drift, and target-drift cases; 5/6 package checksum entries verify, with the mismatch confined to the retained `README.md` checksum |
 | [`labs/LAB-AGENT-EXEC-001/`](labs/LAB-AGENT-EXEC-001/) and [`002`](labs/LAB-AGENT-EXEC-002/) | RETAINED VALIDATION EVIDENCE | Earlier execution-evidence and approval-binding studies |
 | [`labs/LAB-RH-02A/`](labs/LAB-RH-02A/) | RETAINED / CORRECTED | Phoenix telemetry baseline; historical raw output is retained and correction evidence governs interpretation |
 | [`notebooks/`](notebooks/) and [`15_workflow_telemetry_openinference_phoenix.ipynb`](15_workflow_telemetry_openinference_phoenix.ipynb) | HISTORICAL / EXPERIMENTAL | Earlier local-model, prompt-injection, RAG, governance, and telemetry notebooks |
@@ -68,7 +68,7 @@ See [Lab objectives and status vocabulary](LAB_OBJECTIVES.md) and [requirements 
 - [LAB-RAG-EXT-002](labs/LAB-RAG-EXT-002/) separates retrieval-boundary control, boundary-eligible Precision/Recall, and raw ranking in a single-query controlled comparison.
 - [LAB-RAG-EXT-001](labs/LAB-RAG-EXT-001/) shows that the same correct answer can coexist with failed or passed retrieval-boundary control.
 - [LAB-AGENT-EXEC-004](labs/LAB-AGENT-EXEC-004/) retains PASS, FAIL, and INCONCLUSIVE cases for execution, authority, invariant, and retry-ambiguity semantics.
-- [LAB-AGENT-EXEC-003](labs/LAB-AGENT-EXEC-003/) retains controlled HubSpot execution and drift cases.
+- [LAB-AGENT-EXEC-003](labs/LAB-AGENT-EXEC-003/) retains controlled HubSpot execution and drift cases. Five of six package checksum entries verify. The mismatch is confined to the retained `README.md` checksum; the four substantive case records and the evidence manifest verify. The README and its mismatching checksum were introduced together in original publication commit `34f679ff158b76ca593c990ef875d7246131fb06`. No historical evidence should be modified as part of this normalization.
 
 Each package defines its own evidence basis, validation status, and limitations. Package-level wording takes precedence over any short repository summary.
 
@@ -112,10 +112,10 @@ Do not install the root [`requirements.txt`](requirements.txt) as a default repo
 
 ## Licensing and reuse status
 
-No repository-wide license file is present. Repository-level reuse terms are therefore not declared. Third-party tools, product interfaces, and dependencies retain their own licensing terms. A repository-wide licensing decision remains a human-owner action.
+No repository-wide license file is present. Repository-level reuse terms are therefore not declared. Third-party materials, product interfaces, and dependencies remain subject to applicable third-party rights and license terms and are not relicensed by this repository. A repository-wide licensing decision remains a human-owner action.
 
 ## Repository status
 
 This is an active laboratory repository with retained historical material and newer governed public evidence packages. No GitHub Release or production tag is implied by a package being present in the repository.
 
-Author: [Boris Abuzov](https://borisabuzov.com) · [GitHub](https://github.com/boris-ai-sec)
+Author: **Boris Abuzov — AI Risk & Governance Consultant** · [Website](https://borisabuzov.com) · [GitHub](https://github.com/boris-ai-sec)
