@@ -1,279 +1,121 @@
 # AI Systems Risk & Evidence Lab
 
-This repository supports my work as an independent AI Risk & Governance Consultant.
+This repository contains bounded laboratory evidence for RAG, agent, execution-integrity, and observability questions. It is intended for technical inspection and evidence review—not as a production AI platform, a complete penetration test, or a certification environment.
 
-I examine how AI systems behave in real operating conditions, what evidence supports confidence in their operation, where control boundaries fail, and what should be addressed before broader deployment.
-
-The lab produces bounded technical evidence that may inform an Independent AI Risk Review.
----
-
-## What this repository demonstrates
-
-The lab is not intended to be a production AI platform or a complete security certification environment.
-
-It is a practical test environment for:
-
-- running local and API-connected language models;
-- examining prompt injection and context contamination;
-- testing RAG behaviour and retrieval-related risks;
-- observing agent workflows, tool calls, logs, traces, and span attributes;
-- evaluating evidence quality and limitations;
-- connecting technical behaviour with business consequences;
-- identifying what can and cannot be concluded from available evidence;
-- formulating the next evidence request for a deeper review.
-
-The working logic is:
+The governing rule is:
 
 ```text
-Experiment
-→ Evidence
-→ Evidence quality
-→ Limitations
-→ What can be concluded
-→ What cannot be concluded
-→ Next evidence request
+CLAIM STRENGTH <= EVIDENCE STRENGTH
 ```
 
----
+## Start here: one bounded inspection path
 
-## Current focus
+The clearest current reviewer path is the SHA-bound Langflow + Qdrant retrieval-quality package:
 
-The current direction of the lab is broader than classic LLM red teaming.
+```text
+README.md
+→ tools/verify_git_object_checksums.py
+→ labs/LAB-RAG-EXT-002/README.md
+→ two public run records
+→ public evidence manifest
+→ validation record
+→ explicit scope boundary
+```
 
-The primary areas are:
+Prerequisites: Git and Python 3.9 or newer. No model, vector database, API credentials, or external service is required for this inspection path.
 
-1. **Operational AI Risk**  
-   Failures that arise during normal use, integration, updates, scaling, handoffs, and changing operating conditions.
+From the repository root:
 
-2. **RAG Systems**  
-   Retrieval quality, source handling, metadata, freshness, access boundaries, context contamination, and evidence traceability.
+```bash
+python tools/verify_git_object_checksums.py labs/LAB-RAG-EXT-002/SHA256SUMS.txt
+```
 
-3. **Agent Systems**  
-   Autonomy, authority, tool use, API integrations, approval boundaries, retries, idempotency, and safe failure.
+Expected result:
 
-4. **Observability and Runtime Evidence**  
-   Logs, events, traces, spans, OpenTelemetry/OpenInference, Phoenix, and incident reconstruction.
+```text
+PASS 5/5 Git object checksums verified
+```
 
-5. **Prompt Injection and Context Contamination**  
-   Manual and automated testing of model and system behaviour under adversarial or conflicting inputs.
+Then inspect, in order:
 
-6. **Readiness and Controllability**  
-   Whether a system can be introduced into a business process with understandable limitations, adequate evidence, and effective controls.
+1. [Primary result and metric definitions](labs/LAB-RAG-EXT-002/README.md)
+2. [Unfiltered retrieval record](labs/LAB-RAG-EXT-002/01_unfiltered/PUBLIC_RUN_RECORD.json)
+3. [Filtered retrieval record](labs/LAB-RAG-EXT-002/02_filtered/PUBLIC_RUN_RECORD.json)
+4. [Evidence manifest](labs/LAB-RAG-EXT-002/PUBLIC_EVIDENCE_MANIFEST.json)
+5. [Validation record](labs/LAB-RAG-EXT-002/VALIDATION_RECORD.md)
 
----
+This is a **bounded evidence inspection and integrity check**, not a full experiment replay. It establishes that the retained public files match their declared Git-object SHA-256 values and lets a reviewer inspect the approved comparison. It does not reproduce the source Langflow/Qdrant environment, prove production tenant isolation, establish multi-query retrieval quality, or support general RAG safety claims.
 
-## Selected lab work
+## What the repository contains
 
-| Lab | Topic | Main evidence |
+| Path | Status | Purpose |
 |---|---|---|
-| Lab 01–03 | Local model setup, baseline testing, and early prompt-injection experiments | Configuration notes, outputs, screenshots |
-| Lab 04 | Local Ollama API interaction | Python script and API responses |
-| Lab 05–09 | Manual and automated LLM security testing | Test records, Garak outputs, reports |
-| Lab 10 | Logging fundamentals | Log captures and screenshots |
-| Lab 11 | Event structure and workflow evidence | Structured event examples |
-| Lab 12 | Evidence interpretation and limitations | Review notes and findings |
-| Lab 13 | Model behaviour and parameter variation | Comparative screenshots |
-| Lab 14 | Prompt injection and context contamination | Jupyter notebook and findings |
-| Lab 15 | Workflow telemetry with OpenTelemetry/OpenInference and Phoenix | Traces, span attributes, local-model execution evidence |
-| [LAB-RH-02A](labs/LAB-RH-02A/) | Deterministic trace correlation and graceful observability fallback | Controlled telemetry evidence, fallback behavior, limitations |
-| [LAB-AGENT-EXEC-001](labs/LAB-AGENT-EXEC-001/) | Execution evidence and approval-to-action integrity in connected business systems | Curated invocation, fresh-read, audit, and observability evidence |
-| [LAB-AGENT-EXEC-002](labs/LAB-AGENT-EXEC-002/) | Approval-to-action integrity and execution-state revalidation | Bound parameters, invocation, acknowledgement, fresh-state verification, and bounded revalidation evidence |
-| [LAB-AGENT-EXEC-003](labs/LAB-AGENT-EXEC-003/) | HubSpot controlled validation: execution, stale state, parameter drift, and target drift | Sanitized case records with retained run and snapshot-hash provenance |
-| [LAB-AGENT-EXEC-004](labs/LAB-AGENT-EXEC-004/) | ServiceNow Agent Harness portability and failure semantics | Cross-platform execution, authority-boundary, invariant, and retry-ambiguity evidence |
-| [LAB-RAG-EXT-001](labs/LAB-RAG-EXT-001/) | Langflow + Qdrant retrieval-boundary validation | Controlled A/B evidence: same correct answer with retrieval boundary FAIL vs PASS |
-| [LAB-RAG-EXT-002](labs/LAB-RAG-EXT-002/) | Langflow + Qdrant retrieval-quality validation | Boundary-eligible Precision/Recall, BE-RR, boundary control, and raw ranking evidence |
+| [`labs/LAB-RAG-EXT-002/`](labs/LAB-RAG-EXT-002/) | CURRENT / SHA-BOUND PUBLIC EVIDENCE | Most recent committed retrieval-quality comparison |
+| [`labs/LAB-RAG-EXT-001/`](labs/LAB-RAG-EXT-001/) | CURRENT RELATED EVIDENCE | Retrieval-boundary comparison with answer correctness held constant |
+| [`labs/LAB-AGENT-EXEC-004/`](labs/LAB-AGENT-EXEC-004/) | CURRENT / SHA-BOUND PUBLIC EVIDENCE | ServiceNow portability and failure semantics |
+| [`labs/LAB-AGENT-EXEC-003/`](labs/LAB-AGENT-EXEC-003/) | CURRENT PUBLIC EVIDENCE / INTEGRITY REVIEW NEEDED | HubSpot execution, stale-state, parameter-drift, and target-drift cases; one retained README checksum does not verify |
+| [`labs/LAB-AGENT-EXEC-001/`](labs/LAB-AGENT-EXEC-001/) and [`002`](labs/LAB-AGENT-EXEC-002/) | RETAINED VALIDATION EVIDENCE | Earlier execution-evidence and approval-binding studies |
+| [`labs/LAB-RH-02A/`](labs/LAB-RH-02A/) | RETAINED / CORRECTED | Phoenix telemetry baseline; historical raw output is retained and correction evidence governs interpretation |
+| [`notebooks/`](notebooks/) and [`15_workflow_telemetry_openinference_phoenix.ipynb`](15_workflow_telemetry_openinference_phoenix.ipynb) | HISTORICAL / EXPERIMENTAL | Earlier local-model, prompt-injection, RAG, governance, and telemetry notebooks |
+| [`screenshots/`](screenshots/) | RETAINED SUPPORTING OUTPUT | Visual records associated with historical experiments |
+| [`data/clean_docs/`](data/clean_docs/) | SYNTHETIC TEST DATA | Synthetic input used by earlier laboratory work |
+| [`requirements.txt`](requirements.txt) | REFERENCE ONLY | Historical environment snapshot; not a repository-wide supported install contract |
 
-> The repository is evolving. Some labs are more complete and polished than others, and several remain experimental by design.
+See [Lab objectives and status vocabulary](LAB_OBJECTIVES.md) and [requirements and reproduction limits](REQUIREMENTS.md).
 
----
+## Current evidence packages
 
-## Lab 15: Workflow Telemetry and Phoenix
+- [LAB-RAG-EXT-002](labs/LAB-RAG-EXT-002/) separates retrieval-boundary control, boundary-eligible Precision/Recall, and raw ranking in a single-query controlled comparison.
+- [LAB-RAG-EXT-001](labs/LAB-RAG-EXT-001/) shows that the same correct answer can coexist with failed or passed retrieval-boundary control.
+- [LAB-AGENT-EXEC-004](labs/LAB-AGENT-EXEC-004/) retains PASS, FAIL, and INCONCLUSIVE cases for execution, authority, invariant, and retry-ambiguity semantics.
+- [LAB-AGENT-EXEC-003](labs/LAB-AGENT-EXEC-003/) retains controlled HubSpot execution and drift cases.
 
-Lab 15 explores runtime evidence using:
-
-- **Phoenix**
-- **OpenTelemetry**
-- **OpenInference**
-- **Ollama**
-- a local `llama3.2` model
-- synthetic and real local-model traces
-
-The purpose is not merely to produce traces, but to examine:
-
-- which events are visible;
-- whether a workflow can be reconstructed;
-- whether model inputs and outputs are attributable;
-- which span attributes are useful;
-- what evidence is still missing;
-- how runtime evidence could support an AI risk or readiness review.
-
-Example evidence is stored under:
-
-```text
-screenshots/observability/
-```
-
----
-
-## Earlier prompt-injection work
-
-The repository also contains earlier work with:
-
-- Gandalf
-- Garak
-- LM Studio
-- Ollama
-- local open-weight models
-- manual prompt-injection scenarios
-- automated probe runs
-
-These experiments remain useful, but their results are interpreted as **bounded test evidence**, not as universal claims about a model or production system.
-
-A model failing a specific probe does not by itself establish:
-
-- overall system insecurity;
-- production exploitability;
-- regulatory non-compliance;
-- real-world business impact;
-- absence of compensating controls.
-
-Those conclusions require additional architecture, configuration, operational, and runtime evidence.
-
----
-
-## Repository structure
-
-```text
-ai-security-lab/
-├── README.md
-├── notebooks/
-├── scripts/
-├── configs/
-├── reports/
-├── garak_runs/
-└── screenshots/
-    ├── gandalf/
-    ├── ollama/
-    ├── lmstudio/
-    ├── garak/
-    ├── docker/
-    └── observability/
-```
-
-The exact structure may change as the lab is reorganised around RAG, agent, observability, and evidence-focused work.
-
----
+Each package defines its own evidence basis, validation status, and limitations. Package-level wording takes precedence over any short repository summary.
 
 ## Evidence discipline
 
-Each experiment should answer six questions:
+The intended reasoning chain is:
 
-1. **What was tested?**
-2. **What evidence was produced?**
-3. **How reliable and complete is that evidence?**
-4. **What can reasonably be concluded?**
-5. **What cannot be concluded?**
-6. **What evidence should be requested next?**
+```text
+Experiment
+→ retained evidence
+→ evidence quality and completeness
+→ bounded conclusion
+→ explicit limitations
+→ next evidence request
+```
 
-This is important because:
+Important boundaries:
 
 ```text
 Model output ≠ finding
 Configuration ≠ runtime behaviour
 Log entry ≠ complete trace
-Test failure ≠ production risk conclusion
-Lab outputs do not independently constitute findings, scores, or readiness decisions.
+Correct answer ≠ correct retrieval boundary
+Observed target state ≠ proven controlled execution
+Lab PASS ≠ production readiness
 ```
 
-Human judgement remains necessary to interpret evidence, define limitations, and connect technical behaviour to operational and business consequences.
+The repository does not independently provide:
 
----
-
-## Typical review questions
-
-The lab supports questions such as:
-
-- Can an agent perform an action outside its intended authority?
-- Are tool restrictions enforced by code, workflow, or prompt only?
-- Can repeated requests create duplicate orders or other side effects?
-- Can a RAG system distinguish authoritative and outdated sources?
-- Can one user or tenant retrieve another user's data?
-- Can an incident be reconstructed from available logs and traces?
-- What happens when the model, vector database, API, or connector fails?
-- Are human approvals visible and enforceable?
-- What changes when a local deployment becomes a shared SaaS service?
-- Is there enough evidence to support a readiness conclusion?
-
----
-
-## Tools and environments
-
-The lab has used or explored:
-
-- Python
-- Jupyter
-- WSL2 / Ubuntu
-- Docker
-- Ollama
-- LM Studio
-- Garak
-- Phoenix
-- OpenTelemetry
-- OpenInference
-- local open-weight language models
-
-The environment is intentionally lightweight and consultant-owned. It is designed to support repeatable experiments and evidence collection rather than production-scale model serving.
-
----
-
-## Limitations
-
-This repository contains laboratory and synthetic work.
-
-Results should not be generalised beyond the tested:
-
-- model and version;
-- quantisation;
-- prompt and test set;
-- inference runtime;
-- hardware;
-- configuration;
-- workflow;
-- available evidence.
-
-The lab does not provide:
-
-- formal certification;
+- formal certification or an audit opinion;
 - legal or regulatory conclusions;
 - a complete penetration test;
-- a guarantee of safety or readiness;
-- a substitute for production evidence.
+- production-wide security, reliability, readiness, or safety claims;
+- evidence for untested models, configurations, workflows, tenants, or operating conditions.
 
----
+## Setup and execution scope
 
-## About the author
+There is no single supported runtime for every historical notebook and lab. Use the package-specific instructions and pinned files where they exist. The recommended external-review path above is intentionally inspection-only and uses only Git plus the Python standard library.
 
-**Boris Abuzov**  
-**AI Risk & Governance Consultant**
+Do not install the root [`requirements.txt`](requirements.txt) as a default repository setup step. It is retained as an older environment snapshot. See [REQUIREMENTS.md](REQUIREMENTS.md) before attempting other paths.
 
-My work focuses on the relationship between:
+## Licensing and reuse status
 
-```text
-Architecture
-→ Risk
-→ Consequences
-→ Controllability
-```
+No repository-wide license file is present. Repository-level reuse terms are therefore not declared. Third-party tools, product interfaces, and dependencies retain their own licensing terms. A repository-wide licensing decision remains a human-owner action.
 
-I help examine whether RAG and agent systems can operate within business processes with understandable risks, adequate evidence, and defensible control boundaries.
-- Website: https://borisabuzov.com
-- LinkedIn:https://www.linkedin.com/in/boris-abuzov-854176426
-- GitHub: https://github.com/boris-ai-sec
-- Repository: https://github.com/boris-ai-sec/ai-security-lab
+## Repository status
 
----
+This is an active laboratory repository with retained historical material and newer governed public evidence packages. No GitHub Release or production tag is implied by a package being present in the repository.
 
-## Status
-
-This is an active working repository.  
-The current priority is to make RAG, agent, runtime-evidence, and readiness work more visible and reproducible.
+Author: [Boris Abuzov](https://borisabuzov.com) · [GitHub](https://github.com/boris-ai-sec)
