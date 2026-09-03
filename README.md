@@ -112,7 +112,15 @@ Do not install the root [`requirements.txt`](requirements.txt) as a default repo
 
 ## Licensing and reuse status
 
-No repository-wide license file is present. Repository-level reuse terms are therefore not declared. Third-party materials, product interfaces, and dependencies remain subject to applicable third-party rights and license terms and are not relicensed by this repository. A repository-wide licensing decision remains a human-owner action.
+Selected original standalone source files are available under the MIT License only as explicitly listed in [`LICENSE_SCOPE.md`](LICENSE_SCOPE.md); the standard text is retained at [`LICENSES/MIT.txt`](LICENSES/MIT.txt). Laboratory evidence, assessment records, screenshots, professional documentation, publication artifacts, generated outputs, synthetic data, mixed notebooks, and ambiguous material are outside that MIT grant.
+
+Third-party materials, product interfaces, and dependencies remain subject to applicable third-party rights and license terms and are not relicensed by this repository. See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) for the bounded inventory and exclusions.
+
+## Security and release status
+
+Repository-specific security and integrity concerns can be reported through the routes in [`SECURITY.md`](SECURITY.md). This does not make the repository owner a security contact for third-party products.
+
+Versioned release notes are maintained under [`docs/`](docs/), including the bounded [`v0.1.0` release notes](docs/RELEASE_NOTES_V0.1.0.md). GitHub Releases is the authoritative source for whether a version has been published. [`CHANGELOG.md`](CHANGELOG.md) records unreleased repository changes.
 
 ## Repository status
 
