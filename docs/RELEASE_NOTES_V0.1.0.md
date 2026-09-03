@@ -1,10 +1,8 @@
-# Proposed Release Notes — v0.1.0
+# Release Notes — v0.1.0
 
-Proposed title: **Operational AI Risk & Evidence Lab — First Public Repository Release**
+Release title: **Operational AI Risk & Evidence Lab — First Public Repository Release**
 
-Release status: **candidate documentation only; no tag or GitHub Release has been created.**
-
-The candidate release source is the complete repository tree produced if the Repository Maturity V0.2 draft pull request is approved and merged into `main`. A later human approval must identify the exact `main` commit before any tag or release is created.
+These notes define `v0.1.0`. The authoritative tagged commit and publication status are recorded by GitHub Releases when published.
 
 ## Purpose
 
@@ -24,7 +22,7 @@ Related current packages cover retrieval-boundary comparison and agent execution
 
 ## Validation
 
-The candidate includes deterministic, credential-free checks for selected SHA-bound evidence packages, JSON parsing, Markdown relative links, Python syntax, and licensing/workflow consistency. The checks operate on byte-exact Git objects where evidence checksums are involved.
+The `v0.1.0` release tree includes deterministic, credential-free checks for selected SHA-bound evidence packages, JSON parsing, Markdown relative links, Python syntax, and licensing/workflow consistency. The checks operate on byte-exact Git objects where evidence checksums are involved.
 
 ## Licensing
 

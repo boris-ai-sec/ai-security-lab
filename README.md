@@ -120,7 +120,7 @@ Third-party materials, product interfaces, and dependencies remain subject to ap
 
 Repository-specific security and integrity concerns can be reported through the routes in [`SECURITY.md`](SECURITY.md). This does not make the repository owner a security contact for third-party products.
 
-The repository is preparing a proposed first public release, `v0.1.0`. [`CHANGELOG.md`](CHANGELOG.md) records the unreleased maturity work, and [candidate release notes](docs/RELEASE_NOTES_V0.1.0.md) define the bounded release concept and limitations. No release or tag is created by these documents.
+Versioned release notes are maintained under [`docs/`](docs/), including the bounded [`v0.1.0` release notes](docs/RELEASE_NOTES_V0.1.0.md). GitHub Releases is the authoritative source for whether a version has been published. [`CHANGELOG.md`](CHANGELOG.md) records unreleased repository changes.
 
 ## Repository status
 
