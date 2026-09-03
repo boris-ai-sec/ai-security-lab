@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v0.1.0 — 2026-09-03
+
 - Clarify file-level MIT licensing scope and third-party material boundaries.
 - Add repository-specific security reporting guidance.
 - Add deterministic repository validation and a minimal pull-request check.
