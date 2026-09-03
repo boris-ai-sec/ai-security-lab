@@ -1,5 +1,9 @@
 # AI Systems Risk & Evidence Lab
 
+[![Repository validation](https://github.com/boris-ai-sec/ai-security-lab/actions/workflows/repository-validation.yml/badge.svg?branch=main)](https://github.com/boris-ai-sec/ai-security-lab/actions/workflows/repository-validation.yml)
+
+[Latest release](https://github.com/boris-ai-sec/ai-security-lab/releases/latest) · [Professional evidence](https://borisabuzov.com/evidence/)
+
 This repository contains bounded laboratory evidence for RAG, agent, execution-integrity, and observability questions. It is intended for technical inspection and evidence review—not as a production AI platform, a complete penetration test, or a certification environment.
 
 The governing rule is:
