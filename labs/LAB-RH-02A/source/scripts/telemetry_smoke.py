@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 import uuid
 
-from rag_harness.telemetry import TelemetrySession, TelemetrySettings
+from telemetry import TelemetrySession, TelemetrySettings
 
 
 def main() -> int:
