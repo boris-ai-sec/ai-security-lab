@@ -55,6 +55,7 @@ This is a **bounded evidence inspection and integrity check**, not a full experi
 | Path | Status | Purpose |
 |---|---|---|
 | [`labs/LAB-RAG-EXT-002/`](labs/LAB-RAG-EXT-002/) | CURRENT / SHA-BOUND PUBLIC EVIDENCE | Most recent committed retrieval-quality comparison |
+| [`labs/LAB-AGENT-EXEC-005/`](labs/LAB-AGENT-EXEC-005/) | CURRENT / SHA-BOUND PUBLIC EVIDENCE PROJECTION | Runtime-authority comparison showing downstream CRM write capability with model-level credential restriction, and a tested deterministic execution boundary |
 | [`labs/LAB-RAG-EXT-001/`](labs/LAB-RAG-EXT-001/) | CURRENT RELATED EVIDENCE | Retrieval-boundary comparison with answer correctness held constant |
 | [`labs/LAB-AGENT-EXEC-004/`](labs/LAB-AGENT-EXEC-004/) | CURRENT / SHA-BOUND PUBLIC EVIDENCE | ServiceNow portability and failure semantics |
 | [`labs/LAB-AGENT-EXEC-003/`](labs/LAB-AGENT-EXEC-003/) | PUBLIC EVIDENCE / README CHECKSUM DISCREPANCY NOTED | HubSpot execution, stale-state, parameter-drift, and target-drift cases; 5/6 package checksum entries verify, with the mismatch confined to the retained `README.md` checksum |
@@ -69,6 +70,7 @@ See [Lab objectives and status vocabulary](LAB_OBJECTIVES.md) and [requirements 
 
 ## Current evidence packages
 
+- [LAB-AGENT-EXEC-005](labs/LAB-AGENT-EXEC-005/) compares downstream CRM write authority with and without an independent deterministic boundary for the tested wrong-object path while preserving the permitted path.
 - [LAB-RAG-EXT-002](labs/LAB-RAG-EXT-002/) separates retrieval-boundary control, boundary-eligible Precision/Recall, and raw ranking in a single-query controlled comparison.
 - [LAB-RAG-EXT-001](labs/LAB-RAG-EXT-001/) shows that the same correct answer can coexist with failed or passed retrieval-boundary control.
 - [LAB-AGENT-EXEC-004](labs/LAB-AGENT-EXEC-004/) retains PASS, FAIL, and INCONCLUSIVE cases for execution, authority, invariant, and retry-ambiguity semantics.

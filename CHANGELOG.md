@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Add the SHA-bound `LAB-AGENT-EXEC-005` public evidence projection comparing downstream runtime authority with and without a tested deterministic execution boundary.
+
 ## v0.1.0 — 2026-09-03
 
 - Clarify file-level MIT licensing scope and third-party material boundaries.

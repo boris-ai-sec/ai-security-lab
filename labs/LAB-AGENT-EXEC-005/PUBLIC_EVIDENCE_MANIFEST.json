@@ -1,0 +1,35 @@
+{
+  "package": "LAB-AGENT-EXEC-005",
+  "title": "Runtime Authority Boundary — Model Permissions vs System Permissions",
+  "experiment_date": "2026-09-13",
+  "publication_status": "public_safe_derived_evidence",
+  "evidence_class": "sanitized_normalized_projections",
+  "raw_runtime_artifacts_public": false,
+  "primary_question": "If the LLM itself has no HubSpot write credential or direct CRM write tool, does that mean the AI system is actually read-only?",
+  "primary_conclusion": "In the tested Architecture B, removing the HubSpot credential from the model did not remove the overall system's ability to modify HubSpot because downstream orchestration retained the credential and write capability. In Architecture C, an independent deterministic target boundary blocked the tested wrong-object proposal before the HubSpot write path executed while preserving the tested permitted path.",
+  "cases": [
+    {
+      "case_id": "B-NORMAL",
+      "record": "01_architecture_b_normal/PUBLIC_CASE_RECORD.json"
+    },
+    {
+      "case_id": "B-WRONG-OBJECT",
+      "record": "02_architecture_b_wrong_object/PUBLIC_CASE_RECORD.json"
+    },
+    {
+      "case_id": "C-NORMAL",
+      "record": "03_architecture_c_normal/PUBLIC_CASE_RECORD.json"
+    },
+    {
+      "case_id": "C-WRONG-OBJECT",
+      "record": "04_architecture_c_wrong_object/PUBLIC_CASE_RECORD.json"
+    }
+  ],
+  "integrity_scope": "SHA256SUMS.txt binds only the published files in this package as committed to Git; it does not establish immutable linkage to original live-session raw artifacts.",
+  "limitations": [
+    "One n8n orchestrator, one HubSpot Lab CRM, one deal-stage write type, two synthetic objects, one principal wrong-object failure class, and one deterministic gateway design were tested.",
+    "No production load, concurrency or race, bypass-route, gateway authentication or caller-identity, policy tampering or integrity, or explicit fail-open/fail-closed failure-mode testing was performed.",
+    "No production suitability, universal control sufficiency, readiness, or general product-security conclusion is supported.",
+    "Original live-session raw artifacts were not captured under a formal immutable manifest with stable filenames and hashes."
+  ]
+}
