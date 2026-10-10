@@ -132,4 +132,4 @@ Versioned release notes are maintained under [`docs/`](docs/), including the bou
 
 This is an active laboratory repository with retained historical material and newer governed public evidence packages. No GitHub Release or production tag is implied by a package being present in the repository.
 
-Author: **Boris Abuzov — AI Risk & Governance Consultant** · [Website](https://borisabuzov.com) · [GitHub](https://github.com/boris-ai-sec)
+Author: **Boris Abuzov — AI Systems Security & Governance Consultant** · [Website](https://borisabuzov.com) · [GitHub](https://github.com/boris-ai-sec)
