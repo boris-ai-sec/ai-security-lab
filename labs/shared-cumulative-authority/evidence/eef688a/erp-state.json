@@ -1,0 +1,12 @@
+{
+  "initial": {
+    "observed_at": "2026-10-11T10:50:07.391366+00:00",
+    "status_code": 200,
+    "orders": []
+  },
+  "final": {
+    "observed_at": "2026-10-11T10:50:17.686731+00:00",
+    "status_code": 200,
+    "orders": []
+  }
+}

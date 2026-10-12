@@ -1,0 +1,41 @@
+{
+  "run_id": "e304011",
+  "purpose": "ENGINEERING_SMOKE_NOT_FORMAL",
+  "phase": "settled",
+  "started_at": "2026-10-11T10:46:51.194596+00:00",
+  "mode": "corrected",
+  "hook": "pre_transaction",
+  "barrier_timeout_seconds": 5.0,
+  "timeout_basis": {
+    "selection": "explicit_operator_override",
+    "formal": false
+  },
+  "participants": [
+    "op-a",
+    "op-b",
+    "op-c"
+  ],
+  "clean_state": "fresh Compose project and PostgreSQL volume",
+  "isolation_level": "READ COMMITTED",
+  "gateway_workers": 1,
+  "spec_sha256": "84f9c79a44b407de97ef6cf17654aaee666b28b37ee96dac7e9f1b5dd3a160af",
+  "dependencies": "annotated-doc==0.0.5\nannotated-types==0.8.0\nanyio==4.15.1\ncertifi==2026.7.22\nclick==8.5.0\ncolorama==0.4.6\nfastapi==0.135.1\nh11==0.16.0\nhttpcore==1.0.9\nhttpx==0.28.1\nidna==3.20\niniconfig==2.3.1\npackaging==26.3\npluggy==1.6.0\npsycopg==3.3.3\npsycopg-binary==3.3.3\npydantic==2.14.0\npydantic_core==2.50.0\nPygments==2.21.0\npytest==9.0.2\nPyYAML==6.0.3\nstarlette==1.7.0\ntyping-inspection==0.4.4\ntyping_extensions==4.16.0\ntzdata==2026.5\nuvicorn==0.41.0\n",
+  "source_sha256": {
+    "lab\\__init__.py": "83f03a686a339d9a3fb58a8fbefde9dfe0fcfb9ed5e975a8f4ce6dcff5a72f74",
+    "lab\\common.py": "7a382e2f7a24067757847876a891c5df8980effaccd461c5257a5893b81917f2",
+    "lab\\erp.py": "ae57ca0ee2dba91772a61891863e9945f1d999fafff25bd64796812563ed235e",
+    "lab\\evidence.py": "a834db6a6b392ec6f41506096ceb420b0ba48c6fdc8616fe12bcab92c1dda894",
+    "lab\\gateway.py": "5afbee1089483d1ae6cef2fb83a43ed338eb19d20b46bca7fb6dd620c0539173",
+    "lab\\planner.py": "a3522203c87ad84ff3aacc145f057424ae6edcd1c8a7c8f12d3b21a5c3799933",
+    "lab\\run.py": "06f61a3707d9cb3956495ae12e7bd028f6aa80975a5b5478a512b9b995b0dca4",
+    "lab\\schedule.py": "4a0b27a3bbc54539860ad62da7510d3283007abccd7b2a126898d7d5b15d85e9",
+    "lab\\setup.py": "ab5fc7d49cf359f9630927a55231cc3b8d0b845b2a5036241fea92d7b20703b8",
+    "lab\\store.py": "f7da38c393deac956e81ea10da52a90d1f2d067b71dff43b4fe52f0d6769be96"
+  },
+  "finished_at": "2026-10-11T10:47:17.871877+00:00",
+  "images": {
+    "habr003-v01:local": "sha256:c2030eecba5fadbc1e1fd92ae2c3db045a6b43c05aef2e1f2caf49d61b65c83a",
+    "postgres:18.3": "sha256:fbaa243599038521bbda8f6fa286d2a8fc1236509606f22de81d0739b0610ba7"
+  },
+  "docker_version": "29.4.0"
+}

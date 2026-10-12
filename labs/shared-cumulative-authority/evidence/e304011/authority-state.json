@@ -1,0 +1,101 @@
+{
+  "initial": {
+    "observed_at": "2026-10-11T10:47:06.871664+00:00",
+    "grants": [
+      {
+        "grant_id": "G-2026-001",
+        "subject_id": "planner-1",
+        "resource": "COMP-17",
+        "allowed_suppliers": [
+          "SUP-A",
+          "SUP-B",
+          "SUP-C"
+        ],
+        "max_total_quantity": 100,
+        "status": "ACTIVE"
+      }
+    ],
+    "balances": [
+      {
+        "grant_id": "G-2026-001",
+        "charged_quantity": 0,
+        "revision": 0
+      }
+    ],
+    "operations": []
+  },
+  "final": {
+    "observed_at": "2026-10-11T10:47:18.044899+00:00",
+    "grants": [
+      {
+        "grant_id": "G-2026-001",
+        "subject_id": "planner-1",
+        "resource": "COMP-17",
+        "allowed_suppliers": [
+          "SUP-A",
+          "SUP-B",
+          "SUP-C"
+        ],
+        "max_total_quantity": 100,
+        "status": "ACTIVE"
+      }
+    ],
+    "balances": [
+      {
+        "grant_id": "G-2026-001",
+        "charged_quantity": 80,
+        "revision": 2
+      }
+    ],
+    "operations": [
+      {
+        "operation_id": "op-a",
+        "grant_id": "G-2026-001",
+        "subject_id": "planner-1",
+        "resource": "COMP-17",
+        "supplier": "SUP-A",
+        "quantity": 40,
+        "decision": "ALLOW",
+        "reason": "ALLOW",
+        "state": "COMMITTED",
+        "mode": "corrected",
+        "observed_charged": 40,
+        "erp_order_id": 1,
+        "created_at": "2026-10-11 10:47:15.253046+00:00",
+        "updated_at": "2026-10-11 10:47:15.422814+00:00"
+      },
+      {
+        "operation_id": "op-b",
+        "grant_id": "G-2026-001",
+        "subject_id": "planner-1",
+        "resource": "COMP-17",
+        "supplier": "SUP-B",
+        "quantity": 40,
+        "decision": "DENY",
+        "reason": "DENY_CAPACITY",
+        "state": "DENIED",
+        "mode": "corrected",
+        "observed_charged": 80,
+        "erp_order_id": null,
+        "created_at": "2026-10-11 10:47:15.267336+00:00",
+        "updated_at": "2026-10-11 10:47:15.267336+00:00"
+      },
+      {
+        "operation_id": "op-c",
+        "grant_id": "G-2026-001",
+        "subject_id": "planner-1",
+        "resource": "COMP-17",
+        "supplier": "SUP-C",
+        "quantity": 40,
+        "decision": "ALLOW",
+        "reason": "ALLOW",
+        "state": "COMMITTED",
+        "mode": "corrected",
+        "observed_charged": 0,
+        "erp_order_id": 2,
+        "created_at": "2026-10-11 10:47:15.242089+00:00",
+        "updated_at": "2026-10-11 10:47:15.429938+00:00"
+      }
+    ]
+  }
+}

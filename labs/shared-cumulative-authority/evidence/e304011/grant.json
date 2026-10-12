@@ -1,0 +1,12 @@
+{
+  "grant_id": "G-2026-001",
+  "subject_id": "planner-1",
+  "resource": "COMP-17",
+  "allowed_suppliers": [
+    "SUP-A",
+    "SUP-B",
+    "SUP-C"
+  ],
+  "max_total_quantity": 100,
+  "status": "ACTIVE"
+}

@@ -1,0 +1,1069 @@
+{
+  "scope": "approved results index; only four representative raw bundles are public",
+  "formal_runs": 38,
+  "valid": 38,
+  "invalid": 0,
+  "failed": 0,
+  "runs": [
+    {
+      "run_id": "e19bb65",
+      "scenario": "sequential",
+      "phase": "initial-suite",
+      "repetition": 0,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [
+          0,
+          40,
+          80
+        ],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": true
+    },
+    {
+      "run_id": "e466251",
+      "scenario": "vulnerable",
+      "phase": "initial-suite",
+      "repetition": 0,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 3,
+        "DENY": 0,
+        "denial_reasons": {},
+        "observed_vulnerable_snapshots": [
+          0,
+          0,
+          0
+        ],
+        "C": 120,
+        "R": 0,
+        "U": 0,
+        "Q": 120,
+        "L": 100,
+        "D": 120,
+        "charged_quantity": 120,
+        "unique_erp_effects": 3,
+        "balance_revision": 3,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": true
+    },
+    {
+      "run_id": "e304011",
+      "scenario": "corrected",
+      "phase": "initial-suite",
+      "repetition": 0,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": true
+    },
+    {
+      "run_id": "eef688a",
+      "scenario": "resource",
+      "phase": "initial-suite",
+      "repetition": 0,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 0,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_RESOURCE_NOT_IN_GRANT": 1
+        },
+        "observed_vulnerable_snapshots": [],
+        "C": 0,
+        "R": 0,
+        "U": 0,
+        "Q": 0,
+        "L": 100,
+        "D": 0,
+        "charged_quantity": 0,
+        "unique_erp_effects": 0,
+        "balance_revision": 0,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": true
+    },
+    {
+      "run_id": "e9c1820",
+      "scenario": "sequential",
+      "phase": "main-repetition",
+      "repetition": 1,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [
+          0,
+          40,
+          80
+        ],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "ed532c2",
+      "scenario": "vulnerable",
+      "phase": "main-repetition",
+      "repetition": 1,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 3,
+        "DENY": 0,
+        "denial_reasons": {},
+        "observed_vulnerable_snapshots": [
+          0,
+          0,
+          0
+        ],
+        "C": 120,
+        "R": 0,
+        "U": 0,
+        "Q": 120,
+        "L": 100,
+        "D": 120,
+        "charged_quantity": 120,
+        "unique_erp_effects": 3,
+        "balance_revision": 3,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e3cf5ee",
+      "scenario": "corrected",
+      "phase": "main-repetition",
+      "repetition": 1,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "ec2f649",
+      "scenario": "sequential",
+      "phase": "main-repetition",
+      "repetition": 2,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [
+          0,
+          40,
+          80
+        ],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e694fa2",
+      "scenario": "vulnerable",
+      "phase": "main-repetition",
+      "repetition": 2,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 3,
+        "DENY": 0,
+        "denial_reasons": {},
+        "observed_vulnerable_snapshots": [
+          0,
+          0,
+          0
+        ],
+        "C": 120,
+        "R": 0,
+        "U": 0,
+        "Q": 120,
+        "L": 100,
+        "D": 120,
+        "charged_quantity": 120,
+        "unique_erp_effects": 3,
+        "balance_revision": 3,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e8c3582",
+      "scenario": "corrected",
+      "phase": "main-repetition",
+      "repetition": 2,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e81a934",
+      "scenario": "sequential",
+      "phase": "main-repetition",
+      "repetition": 3,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [
+          0,
+          40,
+          80
+        ],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e5fbcc5",
+      "scenario": "vulnerable",
+      "phase": "main-repetition",
+      "repetition": 3,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 3,
+        "DENY": 0,
+        "denial_reasons": {},
+        "observed_vulnerable_snapshots": [
+          0,
+          0,
+          0
+        ],
+        "C": 120,
+        "R": 0,
+        "U": 0,
+        "Q": 120,
+        "L": 100,
+        "D": 120,
+        "charged_quantity": 120,
+        "unique_erp_effects": 3,
+        "balance_revision": 3,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e1b3ed3",
+      "scenario": "corrected",
+      "phase": "main-repetition",
+      "repetition": 3,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "efad40f",
+      "scenario": "sequential",
+      "phase": "main-repetition",
+      "repetition": 4,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [
+          0,
+          40,
+          80
+        ],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e996921",
+      "scenario": "vulnerable",
+      "phase": "main-repetition",
+      "repetition": 4,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 3,
+        "DENY": 0,
+        "denial_reasons": {},
+        "observed_vulnerable_snapshots": [
+          0,
+          0,
+          0
+        ],
+        "C": 120,
+        "R": 0,
+        "U": 0,
+        "Q": 120,
+        "L": 100,
+        "D": 120,
+        "charged_quantity": 120,
+        "unique_erp_effects": 3,
+        "balance_revision": 3,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "ed383ae",
+      "scenario": "corrected",
+      "phase": "main-repetition",
+      "repetition": 4,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e805bff",
+      "scenario": "sequential",
+      "phase": "main-repetition",
+      "repetition": 5,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [
+          0,
+          40,
+          80
+        ],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e693d43",
+      "scenario": "vulnerable",
+      "phase": "main-repetition",
+      "repetition": 5,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 3,
+        "DENY": 0,
+        "denial_reasons": {},
+        "observed_vulnerable_snapshots": [
+          0,
+          0,
+          0
+        ],
+        "C": 120,
+        "R": 0,
+        "U": 0,
+        "Q": 120,
+        "L": 100,
+        "D": 120,
+        "charged_quantity": 120,
+        "unique_erp_effects": 3,
+        "balance_revision": 3,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "eaca657",
+      "scenario": "corrected",
+      "phase": "main-repetition",
+      "repetition": 5,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e24aeae",
+      "scenario": "sequential",
+      "phase": "main-repetition",
+      "repetition": 6,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [
+          0,
+          40,
+          80
+        ],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e2631b9",
+      "scenario": "vulnerable",
+      "phase": "main-repetition",
+      "repetition": 6,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 3,
+        "DENY": 0,
+        "denial_reasons": {},
+        "observed_vulnerable_snapshots": [
+          0,
+          0,
+          0
+        ],
+        "C": 120,
+        "R": 0,
+        "U": 0,
+        "Q": 120,
+        "L": 100,
+        "D": 120,
+        "charged_quantity": 120,
+        "unique_erp_effects": 3,
+        "balance_revision": 3,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "ebea41e",
+      "scenario": "corrected",
+      "phase": "main-repetition",
+      "repetition": 6,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e6b5de6",
+      "scenario": "sequential",
+      "phase": "main-repetition",
+      "repetition": 7,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [
+          0,
+          40,
+          80
+        ],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e57f93b",
+      "scenario": "vulnerable",
+      "phase": "main-repetition",
+      "repetition": 7,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 3,
+        "DENY": 0,
+        "denial_reasons": {},
+        "observed_vulnerable_snapshots": [
+          0,
+          0,
+          0
+        ],
+        "C": 120,
+        "R": 0,
+        "U": 0,
+        "Q": 120,
+        "L": 100,
+        "D": 120,
+        "charged_quantity": 120,
+        "unique_erp_effects": 3,
+        "balance_revision": 3,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "eb3d703",
+      "scenario": "corrected",
+      "phase": "main-repetition",
+      "repetition": 7,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "ed48406",
+      "scenario": "sequential",
+      "phase": "main-repetition",
+      "repetition": 8,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [
+          0,
+          40,
+          80
+        ],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e5b5cb5",
+      "scenario": "vulnerable",
+      "phase": "main-repetition",
+      "repetition": 8,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 3,
+        "DENY": 0,
+        "denial_reasons": {},
+        "observed_vulnerable_snapshots": [
+          0,
+          0,
+          0
+        ],
+        "C": 120,
+        "R": 0,
+        "U": 0,
+        "Q": 120,
+        "L": 100,
+        "D": 120,
+        "charged_quantity": 120,
+        "unique_erp_effects": 3,
+        "balance_revision": 3,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e817368",
+      "scenario": "corrected",
+      "phase": "main-repetition",
+      "repetition": 8,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "efd3f62",
+      "scenario": "sequential",
+      "phase": "main-repetition",
+      "repetition": 9,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [
+          0,
+          40,
+          80
+        ],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "eb4f4aa",
+      "scenario": "vulnerable",
+      "phase": "main-repetition",
+      "repetition": 9,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 3,
+        "DENY": 0,
+        "denial_reasons": {},
+        "observed_vulnerable_snapshots": [
+          0,
+          0,
+          0
+        ],
+        "C": 120,
+        "R": 0,
+        "U": 0,
+        "Q": 120,
+        "L": 100,
+        "D": 120,
+        "charged_quantity": 120,
+        "unique_erp_effects": 3,
+        "balance_revision": 3,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e844e64",
+      "scenario": "corrected",
+      "phase": "main-repetition",
+      "repetition": 9,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e04a26f",
+      "scenario": "sequential",
+      "phase": "main-repetition",
+      "repetition": 10,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [
+          0,
+          40,
+          80
+        ],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "ebaba39",
+      "scenario": "vulnerable",
+      "phase": "main-repetition",
+      "repetition": 10,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 3,
+        "DENY": 0,
+        "denial_reasons": {},
+        "observed_vulnerable_snapshots": [
+          0,
+          0,
+          0
+        ],
+        "C": 120,
+        "R": 0,
+        "U": 0,
+        "Q": 120,
+        "L": 100,
+        "D": 120,
+        "charged_quantity": 120,
+        "unique_erp_effects": 3,
+        "balance_revision": 3,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e03cf14",
+      "scenario": "corrected",
+      "phase": "main-repetition",
+      "repetition": 10,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e014249",
+      "scenario": "sequential",
+      "phase": "fresh-runtime-suite",
+      "repetition": 11,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [
+          0,
+          40,
+          80
+        ],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "ea647d5",
+      "scenario": "vulnerable",
+      "phase": "fresh-runtime-suite",
+      "repetition": 11,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 3,
+        "DENY": 0,
+        "denial_reasons": {},
+        "observed_vulnerable_snapshots": [
+          0,
+          0,
+          0
+        ],
+        "C": 120,
+        "R": 0,
+        "U": 0,
+        "Q": 120,
+        "L": 100,
+        "D": 120,
+        "charged_quantity": 120,
+        "unique_erp_effects": 3,
+        "balance_revision": 3,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e73d726",
+      "scenario": "corrected",
+      "phase": "fresh-runtime-suite",
+      "repetition": 11,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 2,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_CAPACITY": 1
+        },
+        "observed_vulnerable_snapshots": [],
+        "C": 80,
+        "R": 0,
+        "U": 0,
+        "Q": 80,
+        "L": 100,
+        "D": 80,
+        "charged_quantity": 80,
+        "unique_erp_effects": 2,
+        "balance_revision": 2,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    },
+    {
+      "run_id": "e1864e9",
+      "scenario": "resource",
+      "phase": "fresh-runtime-suite",
+      "repetition": 11,
+      "disposition": "PASS",
+      "metrics": {
+        "ALLOW": 0,
+        "DENY": 1,
+        "denial_reasons": {
+          "DENY_RESOURCE_NOT_IN_GRANT": 1
+        },
+        "observed_vulnerable_snapshots": [],
+        "C": 0,
+        "R": 0,
+        "U": 0,
+        "Q": 0,
+        "L": 100,
+        "D": 0,
+        "charged_quantity": 0,
+        "unique_erp_effects": 0,
+        "balance_revision": 0,
+        "uncharged_admission_quantity": 0
+      },
+      "raw_bundle_public": false
+    }
+  ]
+}
