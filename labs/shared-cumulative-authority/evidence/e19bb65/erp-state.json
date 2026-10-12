@@ -1,0 +1,31 @@
+{
+  "initial": {
+    "observed_at": "2026-10-11T10:45:41.107893+00:00",
+    "status_code": 200,
+    "orders": []
+  },
+  "final": {
+    "observed_at": "2026-10-11T10:45:50.910872+00:00",
+    "status_code": 200,
+    "orders": [
+      {
+        "order_id": 1,
+        "operation_id": "op-a",
+        "grant_id": "G-2026-001",
+        "resource": "COMP-17",
+        "supplier": "SUP-A",
+        "quantity": 40,
+        "created_at": "2026-10-11T10:45:47.651462+00:00"
+      },
+      {
+        "order_id": 2,
+        "operation_id": "op-b",
+        "grant_id": "G-2026-001",
+        "resource": "COMP-17",
+        "supplier": "SUP-B",
+        "quantity": 40,
+        "created_at": "2026-10-11T10:45:47.843759+00:00"
+      }
+    ]
+  }
+}

@@ -54,6 +54,7 @@ This is a **bounded evidence inspection and integrity check**, not a full experi
 
 | Path | Status | Purpose |
 |---|---|---|
+| [`labs/shared-cumulative-authority/`](labs/shared-cumulative-authority/) | VALIDATED / REPRODUCIBLE BOUNDED EXPERIMENT | Shared grant of 100: sequential / vulnerable concurrent / reserved concurrent / wrong-resource ERP totals 80 / 120 / 80 / 0 |
 | [`labs/LAB-RAG-EXT-002/`](labs/LAB-RAG-EXT-002/) | CURRENT / SHA-BOUND PUBLIC EVIDENCE | Most recent committed retrieval-quality comparison |
 | [`labs/LAB-AGENT-EXEC-005/`](labs/LAB-AGENT-EXEC-005/) | CURRENT / SHA-BOUND PUBLIC EVIDENCE PROJECTION | Runtime-authority comparison showing downstream CRM write capability with model-level credential restriction, and a tested deterministic execution boundary |
 | [`labs/LAB-RAG-EXT-001/`](labs/LAB-RAG-EXT-001/) | CURRENT RELATED EVIDENCE | Retrieval-boundary comparison with answer correctness held constant |

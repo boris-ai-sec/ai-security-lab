@@ -1,0 +1,2 @@
+# Preserve byte-exact source/spec/evidence and recognize retained CRLF correctly.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

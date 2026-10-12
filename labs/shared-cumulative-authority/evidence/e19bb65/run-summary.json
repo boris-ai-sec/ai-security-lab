@@ -1,0 +1,28 @@
+{
+  "run_id": "e19bb65",
+  "purpose": "ENGINEERING_SMOKE_NOT_FORMAL",
+  "grant_total": 100,
+  "allow_count": 2,
+  "deny_count": 1,
+  "destination_total": 80,
+  "charged_quantity": 80,
+  "C": 80,
+  "R": 0,
+  "U": 0,
+  "Q": 80,
+  "authority_bound_preserved": true,
+  "destination_bound_preserved": true,
+  "destination_relationship_preserved": true,
+  "accounting_consistent": true,
+  "evidence_complete": true,
+  "input_sha256": {
+    "grant.json": "21ae50dfe28c3109f8d93d72dd06fee7f7eaf661f58bc60afe25e642be4bc53c",
+    "requests.jsonl": "dad4984991249971d95e0edad5aa4b61f97a689056e07cadab3b5a3701742de4",
+    "decisions.jsonl": "38d182e53e7aff537c5cbba558abbdd37f0da4def945bd2f16d9e95e0824a247",
+    "authority-state.json": "0de852ac8dad204b43aadd3cde494603c71a092759585431ab2792efa33efd26",
+    "erp-state.json": "4dd8006e9d711ac73f5639fe5aa3b8ca668b78ce5222623e381c8fa9a6577b7f",
+    "schedule-events.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run-manifest.json": "55f26070b94eb4b3ab9e8e7d3d33cc6826e0f1c11bdbd737e653ce258fc97a61"
+  },
+  "claim_status": "ENGINEERING VERIFICATION ONLY; formal Laboratory gate not performed"
+}

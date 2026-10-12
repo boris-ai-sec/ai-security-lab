@@ -1,0 +1,5 @@
+{"timestamp": "2026-10-11T10:46:19.672313+00:00", "component": "harness-hook", "run_id": "e466251", "sequence": 1, "event": "configured", "participants": ["op-a", "op-b", "op-c"], "timeout": 5.0, "hook": "post_read"}
+{"timestamp": "2026-10-11T10:46:32.088155+00:00", "component": "harness-hook", "run_id": "e466251", "sequence": 2, "event": "arrival", "operation_id": "op-a", "attempt_id": "op-a-1", "observed_charged": 0, "revision": 0, "hook": "post_read"}
+{"timestamp": "2026-10-11T10:46:32.102605+00:00", "component": "harness-hook", "run_id": "e466251", "sequence": 3, "event": "arrival", "operation_id": "op-b", "attempt_id": "op-b-1", "observed_charged": 0, "revision": 0, "hook": "post_read"}
+{"timestamp": "2026-10-11T10:46:32.113990+00:00", "component": "harness-hook", "run_id": "e466251", "sequence": 4, "event": "arrival", "operation_id": "op-c", "attempt_id": "op-c-1", "observed_charged": 0, "revision": 0, "hook": "post_read"}
+{"timestamp": "2026-10-11T10:46:32.118065+00:00", "component": "harness-hook", "run_id": "e466251", "sequence": 5, "event": "release", "participants": ["op-a", "op-b", "op-c"], "elapsed_seconds": 12.448902804, "hook": "post_read"}

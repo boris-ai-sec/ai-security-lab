@@ -1,0 +1,7 @@
+*
+!requirements.lock
+!lab/
+!lab/*.py
+!tests/
+!tests/*.py
+!grant.json

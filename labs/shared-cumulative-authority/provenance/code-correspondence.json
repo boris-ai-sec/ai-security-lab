@@ -1,0 +1,132 @@
+{
+  "validated_source_id": "c2328a15864cfbbb761c01d618324e5e03447416cd0d50313b2dd9d30081988a",
+  "experiment_version": "V0.1",
+  "spec_version": "V0.2",
+  "original_spec_sha256": "84f9c79a44b407de97ef6cf17654aaee666b28b37ee96dac7e9f1b5dd3a160af",
+  "public_spec_sha256": "84f9c79a44b407de97ef6cf17654aaee666b28b37ee96dac7e9f1b5dd3a160af",
+  "source_files": [
+    {
+      "path": ".dockerignore",
+      "validated_sha256": "c782889d47cd4a7f6341e0ba477dfc91bad78b03d0a1b5b50ec74a3bdaa88fa5",
+      "public_sha256": "c782889d47cd4a7f6341e0ba477dfc91bad78b03d0a1b5b50ec74a3bdaa88fa5",
+      "treatment": "byte-identical"
+    },
+    {
+      "path": ".gitignore",
+      "validated_sha256": "6bdc88c2bf5a2eced05f0738e8229c19f9a4793b496037eda9bc7c0a5c4c329f",
+      "public_sha256": "6bdc88c2bf5a2eced05f0738e8229c19f9a4793b496037eda9bc7c0a5c4c329f",
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "Dockerfile",
+      "validated_sha256": "e2e1214fdc565135fc9220a3993d84a468017047611550f3663542ddf0c04f6e",
+      "public_sha256": "e2e1214fdc565135fc9220a3993d84a468017047611550f3663542ddf0c04f6e",
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "compose.yaml",
+      "validated_sha256": "58a773982f4dee1ca0f3320a3c14e3e8d22692fa4b01f13f1498a1f171a303a2",
+      "public_sha256": "58a773982f4dee1ca0f3320a3c14e3e8d22692fa4b01f13f1498a1f171a303a2",
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "grant.json",
+      "validated_sha256": "1531d65eec299222528c8cdd97a6966050a035e236cc9ba34dd1be3f33d7e45b",
+      "public_sha256": "1531d65eec299222528c8cdd97a6966050a035e236cc9ba34dd1be3f33d7e45b",
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "lab/__init__.py",
+      "validated_sha256": "83f03a686a339d9a3fb58a8fbefde9dfe0fcfb9ed5e975a8f4ce6dcff5a72f74",
+      "public_sha256": "83f03a686a339d9a3fb58a8fbefde9dfe0fcfb9ed5e975a8f4ce6dcff5a72f74",
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "lab/common.py",
+      "validated_sha256": "7a382e2f7a24067757847876a891c5df8980effaccd461c5257a5893b81917f2",
+      "public_sha256": "7a382e2f7a24067757847876a891c5df8980effaccd461c5257a5893b81917f2",
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "lab/erp.py",
+      "validated_sha256": "ae57ca0ee2dba91772a61891863e9945f1d999fafff25bd64796812563ed235e",
+      "public_sha256": "ae57ca0ee2dba91772a61891863e9945f1d999fafff25bd64796812563ed235e",
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "lab/evidence.py",
+      "validated_sha256": "a834db6a6b392ec6f41506096ceb420b0ba48c6fdc8616fe12bcab92c1dda894",
+      "public_sha256": "a834db6a6b392ec6f41506096ceb420b0ba48c6fdc8616fe12bcab92c1dda894",
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "lab/gateway.py",
+      "validated_sha256": "5afbee1089483d1ae6cef2fb83a43ed338eb19d20b46bca7fb6dd620c0539173",
+      "public_sha256": "5afbee1089483d1ae6cef2fb83a43ed338eb19d20b46bca7fb6dd620c0539173",
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "lab/planner.py",
+      "validated_sha256": "a3522203c87ad84ff3aacc145f057424ae6edcd1c8a7c8f12d3b21a5c3799933",
+      "public_sha256": "a3522203c87ad84ff3aacc145f057424ae6edcd1c8a7c8f12d3b21a5c3799933",
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "lab/run.py",
+      "validated_sha256": "06f61a3707d9cb3956495ae12e7bd028f6aa80975a5b5478a512b9b995b0dca4",
+      "public_sha256": "12e2284986aabeb76a166718fbb704ec93bee4052ed6c26fa723edbc720c51d9",
+      "treatment": "two host-runner location constants only"
+    },
+    {
+      "path": "lab/schedule.py",
+      "validated_sha256": "4a0b27a3bbc54539860ad62da7510d3283007abccd7b2a126898d7d5b15d85e9",
+      "public_sha256": "4a0b27a3bbc54539860ad62da7510d3283007abccd7b2a126898d7d5b15d85e9",
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "lab/setup.py",
+      "validated_sha256": "ab5fc7d49cf359f9630927a55231cc3b8d0b845b2a5036241fea92d7b20703b8",
+      "public_sha256": "ab5fc7d49cf359f9630927a55231cc3b8d0b845b2a5036241fea92d7b20703b8",
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "lab/store.py",
+      "validated_sha256": "f7da38c393deac956e81ea10da52a90d1f2d067b71dff43b4fe52f0d6769be96",
+      "public_sha256": "f7da38c393deac956e81ea10da52a90d1f2d067b71dff43b4fe52f0d6769be96",
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "requirements.lock",
+      "validated_sha256": "28917b49626c88815d819433b8a0b668090b1a029995293bb878a4ff1f007fb0",
+      "public_sha256": "28917b49626c88815d819433b8a0b668090b1a029995293bb878a4ff1f007fb0",
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "requirements.txt",
+      "validated_sha256": "159da40a85cab5f1f77fb0d7110c57167bbc28aff4e9dbd4df900a9b7d6e5ef5",
+      "public_sha256": "159da40a85cab5f1f77fb0d7110c57167bbc28aff4e9dbd4df900a9b7d6e5ef5",
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "tests/test_core.py",
+      "validated_sha256": "0cd689b0934e9b882d043d0e727249b084ead270d8a06e61a9d50631320375e9",
+      "public_sha256": "0cd689b0934e9b882d043d0e727249b084ead270d8a06e61a9d50631320375e9",
+      "treatment": "byte-identical"
+    },
+    {
+      "path": "tests/test_evidence.py",
+      "validated_sha256": "5148fe2b8b2061012552b6a1791d58597f43b2593ac3d00c77d8b74ab806fff7",
+      "public_sha256": "5148fe2b8b2061012552b6a1791d58597f43b2593ac3d00c77d8b74ab806fff7",
+      "treatment": "byte-identical"
+    }
+  ],
+  "excluded_original_documents": [
+    "README.md",
+    "IMPLEMENTATION_REPORT.md"
+  ],
+  "reason": "Replaced internal engineering-stage documentation with public documentation; original hashes remain in the validated source manifest.",
+  "logic_changes": false,
+  "test_changes": false,
+  "spec_changes": false,
+  "result_changes": false
+}

@@ -1,0 +1,101 @@
+x-app: &app
+  image: habr003-v01:local
+  build: .
+  environment: &base-env
+    PGHOST: pg
+    RUN_ID: ${RUN_ID:-engineering}
+  security_opt: [no-new-privileges:true]
+  cap_drop: [ALL]
+
+services:
+  pg:
+    image: postgres:18.3
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD_FILE: /run/secrets/admin.pass
+    secrets: [admin.pass]
+    networks: [execution]
+    volumes: [pgdata:/var/lib/postgresql]
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U admin -d postgres']
+      interval: 1s
+      timeout: 3s
+      retries: 60
+  setup:
+    <<: *app
+    command: [python, -m, lab.setup]
+    secrets: [admin.pass, gw.pass, reader.pass, erp.pass]
+    networks: [execution]
+    depends_on:
+      pg: {condition: service_healthy}
+  erp:
+    <<: *app
+    command: [uvicorn, lab.erp:app, --factory, --host, 0.0.0.0, --port, '8000', --workers, '1']
+    secrets: [erp.pass, erp.write, erp.read]
+    networks: [execution]
+    depends_on:
+      setup: {condition: service_completed_successfully}
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 1s
+      timeout: 3s
+      retries: 60
+  gateway:
+    <<: *app
+    command: [uvicorn, lab.gateway:app, --factory, --host, 0.0.0.0, --port, '8000', --workers, '1']
+    environment:
+      <<: *base-env
+      MODE: ${MODE:-corrected}
+      HOOK: ${HOOK:-none}
+      PARTICIPANTS: op-a,op-b,op-c
+      BARRIER_TIMEOUT: ${BARRIER_TIMEOUT:-10}
+    secrets: [gw.pass, planner.token, erp.write, erp.read]
+    volumes: ['${RUN_OUT:-./out}/gateway:/evidence']
+    networks: [control, execution]
+    depends_on:
+      erp: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 1s
+      timeout: 3s
+      retries: 60
+  planner:
+    <<: *app
+    command: [python, -m, lab.planner, '${SCENARIO:-concurrent}']
+    secrets: [planner.token]
+    volumes: ['${RUN_OUT:-./out}/planner:/evidence']
+    networks: [control]
+    depends_on:
+      gateway: {condition: service_healthy}
+  reader:
+    <<: *app
+    command: [python, -m, lab.evidence, final]
+    secrets: [reader.pass, erp.read]
+    volumes: ['${RUN_OUT:-./out}:/evidence']
+    networks: [execution]
+    depends_on:
+      erp: {condition: service_healthy}
+  tests:
+    <<: *app
+    user: '0:0'
+    command: [python, -m, pytest, -q, tests, --junitxml=/evidence/tests.xml, -p, no:cacheprovider]
+    secrets: [admin.pass, gw.pass, reader.pass, erp.pass, erp.write, erp.read, planner.token]
+    volumes: ['${TEST_OUT:-./out/tests}:/evidence']
+    networks: [execution]
+    profiles: [tests]
+    depends_on:
+      setup: {condition: service_completed_successfully}
+
+networks:
+  control: {internal: true}
+  execution: {internal: true}
+volumes:
+  pgdata:
+secrets:
+  admin.pass: {file: ./secrets/admin.pass}
+  gw.pass: {file: ./secrets/gw.pass}
+  reader.pass: {file: ./secrets/reader.pass}
+  erp.pass: {file: ./secrets/erp.pass}
+  erp.write: {file: ./secrets/erp.write}
+  erp.read: {file: ./secrets/erp.read}
+  planner.token: {file: ./secrets/planner.token}
