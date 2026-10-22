@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "archive_root_label": "ai_security_lab (local historical archive; not bundled)",
+  "artifacts": [
+    {
+      "archive_relative_path": "configs/lmstudio_config.yaml",
+      "size_bytes": 108,
+      "sha256": "947b3264bc9c17768258de79c1c846b20417532497bb1b9d340a2d4990bf8560",
+      "public_copy": "garak/lmstudio_config.yaml"
+    },
+    {
+      "archive_relative_path": "garak_runs/garak.0cf3d3cf-0765-4d3f-8048-38d2c7371017.hitlog.jsonl",
+      "size_bytes": 11463031,
+      "sha256": "7e50ded6d22e2db81dd91f701c0ff320776bde5831cbabd53661886cf465eed0",
+      "public_copy": null
+    },
+    {
+      "archive_relative_path": "garak_runs/garak.0cf3d3cf-0765-4d3f-8048-38d2c7371017.report.html",
+      "size_bytes": 1753199,
+      "sha256": "e2df8f941c3c462263aaab7a63f3286d9baa4e1a07b90ddd20dd0003e9d45209",
+      "public_copy": null
+    },
+    {
+      "archive_relative_path": "garak_runs/garak.0cf3d3cf-0765-4d3f-8048-38d2c7371017.report.jsonl",
+      "size_bytes": 33764360,
+      "sha256": "48db9cbf55d1d135773bda9740f6916adf5e7a66a65711a801571f800c6c8bf3",
+      "public_copy": null
+    },
+    {
+      "archive_relative_path": "garak_runs/garak.276eda05-0cdf-4800-b040-43cf12adcf04.hitlog.jsonl",
+      "size_bytes": 7460984,
+      "sha256": "4a7c87486c7c0ff2ebd7e7bcc618a689c5c2547198108295dc7d406719136c08",
+      "public_copy": null
+    },
+    {
+      "archive_relative_path": "garak_runs/garak.276eda05-0cdf-4800-b040-43cf12adcf04.report.html",
+      "size_bytes": 1752959,
+      "sha256": "02828cefb8d8e6882202bc461339c150ec1e8c603b12bd8b94c8553cb5f6146c",
+      "public_copy": null
+    },
+    {
+      "archive_relative_path": "garak_runs/garak.276eda05-0cdf-4800-b040-43cf12adcf04.report.jsonl",
+      "size_bytes": 34675937,
+      "sha256": "0e44108240681b761525922cdb2d004c7bff128e6b3cbb751170f0de5cddfc94",
+      "public_copy": null
+    },
+    {
+      "archive_relative_path": "garak_runs/garak.c9506907-4403-49f9-a9cf-6b339dd6211a.hitlog.jsonl",
+      "size_bytes": 13167998,
+      "sha256": "515f2375ad755fe9a3459ff09a777deb06be155a0f9cf206ee09a0ee99da6da1",
+      "public_copy": null
+    },
+    {
+      "archive_relative_path": "garak_runs/garak.c9506907-4403-49f9-a9cf-6b339dd6211a.report.html",
+      "size_bytes": 1753295,
+      "sha256": "5b309e02caf553fdd4d66628955283fe0227146a99da714cb17d35aab2236459",
+      "public_copy": null
+    },
+    {
+      "archive_relative_path": "garak_runs/garak.c9506907-4403-49f9-a9cf-6b339dd6211a.report.jsonl",
+      "size_bytes": 30023318,
+      "sha256": "d2ba12992473c016a10426ddb7511306e8038fe41e992c778677c4a5cb08047d",
+      "public_copy": null
+    },
+    {
+      "archive_relative_path": "garak_runs/garak.fc631ff7-fcc6-4f81-9b46-9c0e9fc5affc.hitlog.jsonl",
+      "size_bytes": 2249270,
+      "sha256": "95a21a10d96133ec8909c9d5f08ac0804aa545f13107aebd2074f4a26910ea90",
+      "public_copy": null
+    },
+    {
+      "archive_relative_path": "garak_runs/garak.fc631ff7-fcc6-4f81-9b46-9c0e9fc5affc.report.html",
+      "size_bytes": 1753115,
+      "sha256": "fd2b0b57c5c21369f91b084e1cac229025638c82f7846bf60e7635e1e581620a",
+      "public_copy": null
+    },
+    {
+      "archive_relative_path": "garak_runs/garak.fc631ff7-fcc6-4f81-9b46-9c0e9fc5affc.report.jsonl",
+      "size_bytes": 12131975,
+      "sha256": "dd17a115dda4121bcab6ec873690e61125ec0591c3a56aebc33bda6299ddce75",
+      "public_copy": null
+    },
+    {
+      "archive_relative_path": "screenshots/promptfoo/promptfoo_qwen_refusal.png",
+      "size_bytes": 89274,
+      "sha256": "a808624b8abb50c1d825f62ce0fbe3448145571fa6bf030c23faa202dd9848de",
+      "public_copy": "promptfoo/screenshots/promptfoo_qwen_refusal.png"
+    },
+    {
+      "archive_relative_path": "screenshots/promptfoo/promptfoo_results_overview.png",
+      "size_bytes": 155091,
+      "sha256": "fba94094d447669f314084f2c861c86e637e63dd407e0ce577964b2b4b427f18",
+      "public_copy": "promptfoo/screenshots/promptfoo_results_overview.png"
+    },
+    {
+      "archive_relative_path": "tests/2026-05-05_promptfoo_llama3.2/promptfooconfig-qwen.yaml",
+      "size_bytes": 639,
+      "sha256": "fd5d798d47b87e1b11aa1f59b2080ce1483e536ca9fb4720413a219fce887ced",
+      "public_copy": "promptfoo/promptfooconfig-qwen.yaml"
+    },
+    {
+      "archive_relative_path": "tests/2026-05-05_promptfoo_llama3.2/promptfooconfig.yaml",
+      "size_bytes": 1270,
+      "sha256": "8a897f2948dc6986ac54c96227ddc0dc4800ebbb502c5839ec2aec509bc607d2",
+      "public_copy": "promptfoo/promptfooconfig.yaml"
+    }
+  ]
+}
