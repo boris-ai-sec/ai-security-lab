@@ -1,0 +1,2 @@
+# Preserve archived YAML bytes, including original CRLF and trailing spaces.
+*.yaml -text whitespace=-blank-at-eol,cr-at-eol

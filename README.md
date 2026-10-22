@@ -79,6 +79,10 @@ See [Lab objectives and status vocabulary](LAB_OBJECTIVES.md) and [requirements 
 
 Each package defines its own evidence basis, validation status, and limitations. Package-level wording takes precedence over any short repository summary.
 
+## Earlier adversarial evaluation work
+
+[Early Garak and Promptfoo laboratory work](labs/early-adversarial-testing/) retains bounded historical evidence of automated prompt-injection probing and local-model evaluation. It documents an earlier stage in the progression toward the RAG, agent-control, runtime-evidence, and execution-security work above. Results apply only to the recorded test conditions.
+
 ## Evidence discipline
 
 The intended reasoning chain is:
